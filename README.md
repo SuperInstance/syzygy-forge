@@ -352,4 +352,12 @@ readerside2/  the v2 follow-up — the render mapping on trial, and the
           batch indicted instead: RESULTS-V2.md, mapping.json,
           scores_v2.json, reader_outputs.jsonl (240 records),
           renders/{fixed,learned,learned_cal}/
+readerside3/  the v3 digest-channel study — readers answer from a
+          computed digest alone, no grid: RESULTS-V3.md,
+          GUIDE-DIGEST.md, digests.jsonl, scores_v3.json,
+          reader_outputs.jsonl (160 records), renders/
+corpus-v1/  the five-clip generalisation study — one general table vs
+          per-domain specialists: RESULTS.md, src/, tables/ (pooled +
+          10 specialists), eval/eval_v1.json, per-clip feature
+          metas, split_manifest_v1.json
 ```
