@@ -1,0 +1,306 @@
+{
+  "profile": "micro",
+  "n": 16,
+  "k": 8,
+  "feature_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "rows": [
+    [
+      116,
+      101,
+      130,
+      116,
+      116,
+      116,
+      116,
+      117
+    ],
+    [
+      116,
+      101,
+      130,
+      116,
+      116,
+      116,
+      116,
+      117
+    ],
+    [
+      116,
+      101,
+      130,
+      116,
+      116,
+      116,
+      116,
+      117
+    ],
+    [
+      92,
+      73,
+      111,
+      107,
+      76,
+      93,
+      91,
+      100
+    ],
+    [
+      116,
+      101,
+      130,
+      116,
+      116,
+      116,
+      116,
+      117
+    ],
+    [
+      116,
+      101,
+      130,
+      116,
+      116,
+      116,
+      116,
+      117
+    ],
+    [
+      116,
+      101,
+      130,
+      116,
+      116,
+      116,
+      116,
+      117
+    ],
+    [
+      116,
+      101,
+      130,
+      116,
+      116,
+      116,
+      116,
+      117
+    ],
+    [
+      116,
+      101,
+      130,
+      116,
+      116,
+      116,
+      116,
+      117
+    ],
+    [
+      106,
+      102,
+      109,
+      108,
+      105,
+      106,
+      107,
+      112
+    ],
+    [
+      78,
+      45,
+      110,
+      87,
+      68,
+      89,
+      66,
+      113
+    ],
+    [
+      116,
+      101,
+      130,
+      116,
+      116,
+      116,
+      116,
+      117
+    ],
+    [
+      113,
+      111,
+      114,
+      114,
+      112,
+      113,
+      113,
+      111
+    ],
+    [
+      20,
+      1,
+      84,
+      5,
+      34,
+      16,
+      24,
+      4
+    ],
+    [
+      83,
+      63,
+      93,
+      91,
+      75,
+      82,
+      83,
+      88
+    ],
+    [
+      116,
+      101,
+      130,
+      116,
+      116,
+      116,
+      116,
+      117
+    ]
+  ],
+  "assignment_rule": "raw dot-product argmax (kernel selector's literal rule)",
+  "outcome": "COLLAPSED \u2014 one codeword takes every train cell; kept as a negative result",
+  "training": {
+    "seed": 20261011,
+    "subsample_cells": 200000,
+    "iterations_run": 12,
+    "converged": true,
+    "iteration_log": [
+      {
+        "iter": 0,
+        "rows_changed": 1,
+        "dead": 15,
+        "min_count": 0,
+        "max_count": 200000
+      },
+      {
+        "iter": 1,
+        "rows_changed": 1,
+        "dead": 15,
+        "min_count": 0,
+        "max_count": 200000
+      },
+      {
+        "iter": 2,
+        "rows_changed": 1,
+        "dead": 15,
+        "min_count": 0,
+        "max_count": 200000
+      },
+      {
+        "iter": 3,
+        "rows_changed": 2,
+        "dead": 14,
+        "min_count": 0,
+        "max_count": 199985
+      },
+      {
+        "iter": 4,
+        "rows_changed": 2,
+        "dead": 14,
+        "min_count": 0,
+        "max_count": 195349
+      },
+      {
+        "iter": 5,
+        "rows_changed": 1,
+        "dead": 15,
+        "min_count": 0,
+        "max_count": 200000
+      },
+      {
+        "iter": 6,
+        "rows_changed": 1,
+        "dead": 15,
+        "min_count": 0,
+        "max_count": 200000
+      },
+      {
+        "iter": 7,
+        "rows_changed": 1,
+        "dead": 15,
+        "min_count": 0,
+        "max_count": 200000
+      },
+      {
+        "iter": 8,
+        "rows_changed": 1,
+        "dead": 15,
+        "min_count": 0,
+        "max_count": 200000
+      },
+      {
+        "iter": 9,
+        "rows_changed": 1,
+        "dead": 15,
+        "min_count": 0,
+        "max_count": 200000
+      },
+      {
+        "iter": 10,
+        "rows_changed": 1,
+        "dead": 15,
+        "min_count": 0,
+        "max_count": 200000
+      },
+      {
+        "iter": 11,
+        "rows_changed": 0,
+        "dead": 15,
+        "min_count": 0,
+        "max_count": 200000
+      }
+    ]
+  },
+  "train_usage_full_set": [
+    2817920,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "train_dead_codewords": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ]
+}
