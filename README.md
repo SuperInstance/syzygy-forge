@@ -130,6 +130,72 @@ MiniMax's worst, both inside noise. One finding is untouched: at
 148×80, region truth travels via the digest — every reader cell in both
 batches still sits below the constant-answer composite.
 
+**5. Reader-side v3: the digest channel settles the region question**
+(full write-up in
+[`readerside3/RESULTS-V3.md`](readerside3/RESULTS-V3.md)). The same 40
+frames, same questions, same frozen scorer, same readers — but no
+grid: each reader received only a computed **digest** of the frame
+(quadrant and half luma sums and means, the brightness centroid, Sobel
+edge counts and mass by half and band), derived from the source
+pixels, never from the truth answers. A fresh learned-cal grid control
+ran in the same batch:
+
+- **GLM: 1.000 on the digest** vs 0.400 on the grid control.
+- **MiniMax: 0.850 strict on the digest** vs 0.370 on the control —
+  and the 0.850 is a format number: all 30 unparsed answers were
+  present and correct (parsed-only accuracy 1.000, 200/200 in intent),
+  with **zero comparison errors** across both readers.
+- A scripted oracle parsing the digest *text* with the frozen decision
+  rules scores **200/200** — the digest provably suffices, and a gate
+  audit confirms every region number in every digest equals the frozen
+  computation the truth was derived from.
+- Against the constant-answer ceiling (0.475) that capped every plane
+  cell in v1 and v2, the digest posts +37.5 / +52.5 points — margins
+  roughly **ten times** the ±5–7-point noise floor v2 measured. Frame
+  83, the two-batch confabulation case, goes 5/5 for both readers.
+- Cost: the digest block is 1,592 chars against the grid's 11,919
+  (7.5×); whole prompts 2.4× smaller (the ~5.3k-char guide overhead is
+  paid on both channels, so the brief's ~100× does not survive
+  measurement); the batch ran in ~27 minutes against v2's ~2.3 hours.
+
+**Verdict: region truth travels as computed sums.** For region
+questions the stage-5 plane comparison is moot — both planes are
+dominated by a cheaper channel that reads perfectly. The raw plane
+keeps the job it measurably does: position and structure impressions.
+The residual digest problem is answer-format discipline, not
+perception.
+
+**6. Corpus v1: the codebook generalises — one general table** (full
+write-up in [`corpus-v1/RESULTS.md`](corpus-v1/RESULTS.md)). Feature
+extraction was extended to all five stage-0 sources (5,394 frames at
+the 80×24 raster; extracted tone planes match stage 0's independent
+implementation on **5,394/5,394 frames**), and the v0 open question —
+per-domain tables or one general table — was measured on held-out
+frames:
+
+- The fixed table collapses on **all five** clips: codeword 2 takes
+  99.0–100.0% of test cells everywhere, codeword 3 is dead on all
+  five, and codeword 1 is additionally dead across the entire
+  lighthouses and judge clips. V0's one-symbol verdict was not a
+  docks quirk.
+- The shipped docks tables travel: on clips they never trained on
+  they beat fixed by 3.2–5.2× (micro) and 4.1–6.8× (full), in the
+  same error band as at home, and within ~1% of a native specialist
+  on their home clip at the new raster. No learned table collapses
+  anywhere (worst max-share 0.396).
+- A pooled table trained on all five clips (micro `0xdf32b48c`,
+  full `0xfe573b61`) beats the docks tables on **every** foreign clip
+  (−6% to −25%) for a +7% / +12% cost at home, and sits within
+  4–19% (micro) / 8–26% (full) of the per-clip specialist ceiling on
+  the specialist's own clip.
+
+**Verdict: train one general table.** Per-domain tables are a
+bounded, roughly uniform deployment-time premium — worth taking for
+a genuinely single-purpose camera, never a precondition for the
+representation to travel. This answers item 6 below and retires the
+one-clip caveat for the quantisation proxy (reader-side
+generalisation is still unmeasured).
+
 ---
 
 ## Technical record
