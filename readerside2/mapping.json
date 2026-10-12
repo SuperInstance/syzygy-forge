@@ -1,0 +1,153 @@
+{
+  "ramp": " .:-=+*#%@",
+  "kernel_scale": "idx = min((luma * 9) // 255, 9) \u2014 base term of syz_fused_tone (syzygy/include/syz_fused.h); fixed plane adds sel in {0,1,2} from the fixed selector on top of this base.",
+  "quantity_mapped": "centroid mean_luma = table_micro rows[cw][0] (feature 0; micro table feature space is features 0-7, so this is the centroid's own luma summary, and the same quantity the v1 rank ordering sorted by).",
+  "codewords": [
+    {
+      "cw": 0,
+      "centroid_mean_luma": 162,
+      "rank": 13,
+      "rank_char_idx": 8,
+      "cal_char_idx": 5,
+      "rank_char": "%",
+      "cal_char": "+"
+    },
+    {
+      "cw": 1,
+      "centroid_mean_luma": 123,
+      "rank": 10,
+      "rank_char_idx": 6,
+      "cal_char_idx": 4,
+      "rank_char": "*",
+      "cal_char": "="
+    },
+    {
+      "cw": 2,
+      "centroid_mean_luma": 120,
+      "rank": 8,
+      "rank_char_idx": 5,
+      "cal_char_idx": 4,
+      "rank_char": "+",
+      "cal_char": "="
+    },
+    {
+      "cw": 3,
+      "centroid_mean_luma": 120,
+      "rank": 9,
+      "rank_char_idx": 5,
+      "cal_char_idx": 4,
+      "rank_char": "+",
+      "cal_char": "="
+    },
+    {
+      "cw": 4,
+      "centroid_mean_luma": 181,
+      "rank": 14,
+      "rank_char_idx": 8,
+      "cal_char_idx": 6,
+      "rank_char": "%",
+      "cal_char": "*"
+    },
+    {
+      "cw": 5,
+      "centroid_mean_luma": 207,
+      "rank": 15,
+      "rank_char_idx": 9,
+      "cal_char_idx": 7,
+      "rank_char": "@",
+      "cal_char": "#"
+    },
+    {
+      "cw": 6,
+      "centroid_mean_luma": 77,
+      "rank": 3,
+      "rank_char_idx": 1,
+      "cal_char_idx": 2,
+      "rank_char": ".",
+      "cal_char": ":"
+    },
+    {
+      "cw": 7,
+      "centroid_mean_luma": 98,
+      "rank": 6,
+      "rank_char_idx": 3,
+      "cal_char_idx": 3,
+      "rank_char": "-",
+      "cal_char": "-"
+    },
+    {
+      "cw": 8,
+      "centroid_mean_luma": 77,
+      "rank": 4,
+      "rank_char_idx": 2,
+      "cal_char_idx": 2,
+      "rank_char": ":",
+      "cal_char": ":"
+    },
+    {
+      "cw": 9,
+      "centroid_mean_luma": 153,
+      "rank": 12,
+      "rank_char_idx": 7,
+      "cal_char_idx": 5,
+      "rank_char": "#",
+      "cal_char": "+"
+    },
+    {
+      "cw": 10,
+      "centroid_mean_luma": 139,
+      "rank": 11,
+      "rank_char_idx": 6,
+      "cal_char_idx": 4,
+      "rank_char": "*",
+      "cal_char": "="
+    },
+    {
+      "cw": 11,
+      "centroid_mean_luma": 63,
+      "rank": 2,
+      "rank_char_idx": 1,
+      "cal_char_idx": 2,
+      "rank_char": ".",
+      "cal_char": ":"
+    },
+    {
+      "cw": 12,
+      "centroid_mean_luma": 42,
+      "rank": 1,
+      "rank_char_idx": 0,
+      "cal_char_idx": 1,
+      "rank_char": " ",
+      "cal_char": "."
+    },
+    {
+      "cw": 13,
+      "centroid_mean_luma": 102,
+      "rank": 7,
+      "rank_char_idx": 4,
+      "cal_char_idx": 3,
+      "rank_char": "=",
+      "cal_char": "-"
+    },
+    {
+      "cw": 14,
+      "centroid_mean_luma": 18,
+      "rank": 0,
+      "rank_char_idx": 0,
+      "cal_char_idx": 0,
+      "rank_char": " ",
+      "cal_char": " "
+    },
+    {
+      "cw": 15,
+      "centroid_mean_luma": 82,
+      "rank": 5,
+      "rank_char_idx": 3,
+      "cal_char_idx": 2,
+      "rank_char": "-",
+      "cal_char": ":"
+    }
+  ],
+  "distinct_chars_rank": 10,
+  "distinct_chars_cal": 8
+}

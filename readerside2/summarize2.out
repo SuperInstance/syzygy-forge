@@ -1,0 +1,53 @@
+v1 recomputation vs v1 scores.json: IDENTICAL
+v2 records: 240 / 240 (failed attempts retained: 6; missing: 0)
+
+=== v2 headline (fresh samples; blind = v1 reference) ===
+reader      fixed    rank     cal   blind  cal-rank  cal-fixed
+minimax   0.385  0.390  0.345  0.310  -0.045   -0.040
+glm       0.320  0.350  0.380  0.280  +0.030   +0.060
+
+=== v1 frozen reference ===
+minimax   fixed 0.315  learned 0.430  blind 0.310
+glm       fixed 0.350  learned 0.325  blind 0.280
+
+=== per-question (fixed | rank | cal) ===
+minimax   Q1: 0.275 | 0.325 | 0.225   const=BR@0.42 unp F/R/C=3/2/2
+minimax   Q2: 0.375 | 0.325 | 0.225   const=TL@0.38 unp F/R/C=3/3/2
+minimax   Q3: 0.450 | 0.450 | 0.500   const=right@0.53 unp F/R/C=3/2/2
+minimax   Q4: 0.525 | 0.475 | 0.525   const=right@0.55 unp F/R/C=3/2/2
+minimax   Q5: 0.300 | 0.375 | 0.250   const=top@0.50 unp F/R/C=3/2/2
+glm       Q1: 0.300 | 0.175 | 0.350   const=BR@0.42 unp F/R/C=2/2/1
+glm       Q2: 0.225 | 0.325 | 0.350   const=TL@0.38 unp F/R/C=3/2/2
+glm       Q3: 0.450 | 0.475 | 0.400   const=right@0.53 unp F/R/C=6/2/3
+glm       Q4: 0.325 | 0.500 | 0.550   const=right@0.55 unp F/R/C=6/4/5
+glm       Q5: 0.300 | 0.275 | 0.250   const=top@0.50 unp F/R/C=6/6/6
+
+=== Q3 dive ===
+minimax: fixed 0.450 rank 0.450 cal 0.500 | rank-vs-cal {'learned_only': 7, 'learned_cal_only': 9, 'both': 11, 'neither': 13} | fixed-vs-cal {'fixed_only': 7, 'learned_cal_only': 9, 'both': 11, 'neither': 13}
+glm: fixed 0.450 rank 0.475 cal 0.400 | rank-vs-cal {'learned_only': 9, 'learned_cal_only': 6, 'both': 10, 'neither': 15} | fixed-vs-cal {'fixed_only': 9, 'learned_cal_only': 7, 'both': 9, 'neither': 15}
+
+=== frame 83 (truth Q1=TR wide margin) ===
+minimax   fixed            Q1=BR Q3=right correct={'Q1': False, 'Q2': True, 'Q3': True, 'Q4': False, 'Q5': True}
+minimax   learned          Q1=TL Q3=left correct={'Q1': False, 'Q2': False, 'Q3': False, 'Q4': True, 'Q5': False}
+minimax   learned_cal      Q1=BR Q3=right correct={'Q1': False, 'Q2': True, 'Q3': True, 'Q4': False, 'Q5': False}
+minimax   v1_learned_rank  Q1=TR Q3=right correct={'Q1': True, 'Q2': True, 'Q3': True, 'Q4': True, 'Q5': True}
+minimax   v1_fixed         Q1=TL Q3=left correct={'Q1': False, 'Q2': True, 'Q3': False, 'Q4': True, 'Q5': False}
+glm       fixed            Q1=TL Q3=left correct={'Q1': False, 'Q2': True, 'Q3': False, 'Q4': True, 'Q5': False}
+glm       learned          Q1=TL Q3=left correct={'Q1': False, 'Q2': False, 'Q3': False, 'Q4': True, 'Q5': True}
+glm       learned_cal      Q1=TL Q3=left correct={'Q1': False, 'Q2': False, 'Q3': False, 'Q4': True, 'Q5': False}
+glm       v1_learned_rank  Q1=BL Q3=left correct={'Q1': False, 'Q2': False, 'Q3': False, 'Q4': True, 'Q5': False}
+glm       v1_fixed         Q1=TR Q3=right correct={'Q1': True, 'Q2': False, 'Q3': True, 'Q4': True, 'Q5': False}
+
+=== parsed-only overall ===
+minimax   fixed 0.416 rank 0.413 cal 0.363 blind(v1) 0.339
+glm       fixed 0.362 rank 0.380 cal 0.415 blind(v1) 0.400
+
+=== clear-margin subset ===
+minimax   fixed        0.397
+minimax   learned      0.437
+minimax   learned_cal  0.357
+glm       fixed        0.373
+glm       learned      0.357
+glm       learned_cal  0.389
+
+failures recorded: 766

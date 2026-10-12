@@ -1,0 +1,212 @@
+{
+  "sanity_gate": {
+    "forge_compare_panels_10_120": "OK",
+    "learned_rank_regen_vs_v1_files": "OK (40/40 byte-identical)",
+    "fixed_vs_shipped_tone_files": "OK (40/40 byte-identical)",
+    "v1_prompt_grids_vs_render_files": "OK (160 records)"
+  },
+  "per_frame": [
+    {
+      "frame": 0,
+      "cells_cal_vs_rank": 10610,
+      "cells_cal_vs_fixed": 11732
+    },
+    {
+      "frame": 8,
+      "cells_cal_vs_rank": 10824,
+      "cells_cal_vs_fixed": 11633
+    },
+    {
+      "frame": 15,
+      "cells_cal_vs_rank": 10263,
+      "cells_cal_vs_fixed": 11636
+    },
+    {
+      "frame": 23,
+      "cells_cal_vs_rank": 10152,
+      "cells_cal_vs_fixed": 11685
+    },
+    {
+      "frame": 30,
+      "cells_cal_vs_rank": 10395,
+      "cells_cal_vs_fixed": 11731
+    },
+    {
+      "frame": 38,
+      "cells_cal_vs_rank": 10435,
+      "cells_cal_vs_fixed": 11765
+    },
+    {
+      "frame": 46,
+      "cells_cal_vs_rank": 10206,
+      "cells_cal_vs_fixed": 11780
+    },
+    {
+      "frame": 53,
+      "cells_cal_vs_rank": 11494,
+      "cells_cal_vs_fixed": 11838
+    },
+    {
+      "frame": 61,
+      "cells_cal_vs_rank": 11435,
+      "cells_cal_vs_fixed": 11752
+    },
+    {
+      "frame": 68,
+      "cells_cal_vs_rank": 10942,
+      "cells_cal_vs_fixed": 11770
+    },
+    {
+      "frame": 76,
+      "cells_cal_vs_rank": 9824,
+      "cells_cal_vs_fixed": 11701
+    },
+    {
+      "frame": 83,
+      "cells_cal_vs_rank": 10705,
+      "cells_cal_vs_fixed": 11704
+    },
+    {
+      "frame": 91,
+      "cells_cal_vs_rank": 10782,
+      "cells_cal_vs_fixed": 11724
+    },
+    {
+      "frame": 99,
+      "cells_cal_vs_rank": 10793,
+      "cells_cal_vs_fixed": 11728
+    },
+    {
+      "frame": 106,
+      "cells_cal_vs_rank": 10769,
+      "cells_cal_vs_fixed": 11683
+    },
+    {
+      "frame": 114,
+      "cells_cal_vs_rank": 10651,
+      "cells_cal_vs_fixed": 11730
+    },
+    {
+      "frame": 121,
+      "cells_cal_vs_rank": 10890,
+      "cells_cal_vs_fixed": 11743
+    },
+    {
+      "frame": 129,
+      "cells_cal_vs_rank": 10881,
+      "cells_cal_vs_fixed": 11728
+    },
+    {
+      "frame": 137,
+      "cells_cal_vs_rank": 10821,
+      "cells_cal_vs_fixed": 11714
+    },
+    {
+      "frame": 144,
+      "cells_cal_vs_rank": 10123,
+      "cells_cal_vs_fixed": 11736
+    },
+    {
+      "frame": 152,
+      "cells_cal_vs_rank": 10122,
+      "cells_cal_vs_fixed": 11723
+    },
+    {
+      "frame": 159,
+      "cells_cal_vs_rank": 10683,
+      "cells_cal_vs_fixed": 11731
+    },
+    {
+      "frame": 167,
+      "cells_cal_vs_rank": 10369,
+      "cells_cal_vs_fixed": 11623
+    },
+    {
+      "frame": 175,
+      "cells_cal_vs_rank": 10381,
+      "cells_cal_vs_fixed": 11677
+    },
+    {
+      "frame": 182,
+      "cells_cal_vs_rank": 10217,
+      "cells_cal_vs_fixed": 11732
+    },
+    {
+      "frame": 190,
+      "cells_cal_vs_rank": 10554,
+      "cells_cal_vs_fixed": 11743
+    },
+    {
+      "frame": 197,
+      "cells_cal_vs_rank": 10919,
+      "cells_cal_vs_fixed": 11744
+    },
+    {
+      "frame": 205,
+      "cells_cal_vs_rank": 10101,
+      "cells_cal_vs_fixed": 11556
+    },
+    {
+      "frame": 213,
+      "cells_cal_vs_rank": 10559,
+      "cells_cal_vs_fixed": 11635
+    },
+    {
+      "frame": 220,
+      "cells_cal_vs_rank": 9966,
+      "cells_cal_vs_fixed": 11672
+    },
+    {
+      "frame": 228,
+      "cells_cal_vs_rank": 9959,
+      "cells_cal_vs_fixed": 11707
+    },
+    {
+      "frame": 235,
+      "cells_cal_vs_rank": 10175,
+      "cells_cal_vs_fixed": 11735
+    },
+    {
+      "frame": 243,
+      "cells_cal_vs_rank": 10773,
+      "cells_cal_vs_fixed": 11683
+    },
+    {
+      "frame": 250,
+      "cells_cal_vs_rank": 10965,
+      "cells_cal_vs_fixed": 11687
+    },
+    {
+      "frame": 258,
+      "cells_cal_vs_rank": 10776,
+      "cells_cal_vs_fixed": 11709
+    },
+    {
+      "frame": 266,
+      "cells_cal_vs_rank": 10140,
+      "cells_cal_vs_fixed": 11704
+    },
+    {
+      "frame": 273,
+      "cells_cal_vs_rank": 10131,
+      "cells_cal_vs_fixed": 11740
+    },
+    {
+      "frame": 281,
+      "cells_cal_vs_rank": 10283,
+      "cells_cal_vs_fixed": 11750
+    },
+    {
+      "frame": 288,
+      "cells_cal_vs_rank": 10587,
+      "cells_cal_vs_fixed": 11715
+    },
+    {
+      "frame": 296,
+      "cells_cal_vs_rank": 10694,
+      "cells_cal_vs_fixed": 11719
+    }
+  ],
+  "mean_cells_cal_vs_rank": 10533.725,
+  "mean_cells_cal_vs_fixed": 11712.45
+}
