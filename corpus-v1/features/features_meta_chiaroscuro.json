@@ -1,0 +1,25 @@
+{
+  "clip": "chiaroscuro",
+  "source_nv12": "~/workspace/syzygy-program/stage0/work/chiaroscuro.nv12",
+  "source_provenance": "stage-0 extracted NV12 stream (see syzygy-program/stage0/frames_manifest.jsonl)",
+  "grid": {
+    "cols": 80,
+    "rows": 24,
+    "frames": 1039,
+    "cells_per_frame": 1920,
+    "total_cells": 1994880
+  },
+  "extractor": "forge src/extract_features.c (v0 binary, unchanged; kernel headers included read-only)",
+  "record_layout": "per cell: 16 x int16 features, uint8 fixed_sel, uint8 fixed_tone_idx; frame-major, row-major",
+  "fixed_sel_histogram_all_frames": [
+    177,
+    78,
+    1994625,
+    0
+  ],
+  "tone_verification_vs_stage0_native": {
+    "method": "FNV-1a/32 over per-frame tone plane bytes (ascii bytes) vs stage0 hashes.jsonl native.tone",
+    "frames_checked": 1039,
+    "mismatched_frames": 0
+  }
+}

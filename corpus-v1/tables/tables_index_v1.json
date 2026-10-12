@@ -1,0 +1,133 @@
+{
+  "format": "SYZT v0 (forge prototype) \u2014 corpus v1 tables",
+  "tables": [
+    {
+      "name": "pooled_micro",
+      "source_json": "tables/table_pooled_micro.json",
+      "table_id_fnv1a": "0xdf32b48c",
+      "n": 16,
+      "k": 8,
+      "trained_on": [
+        "docks",
+        "arena",
+        "chiaroscuro",
+        "lighthouses",
+        "judge"
+      ]
+    },
+    {
+      "name": "pooled_full",
+      "source_json": "tables/table_pooled_full.json",
+      "table_id_fnv1a": "0xfe573b61",
+      "n": 64,
+      "k": 16,
+      "trained_on": [
+        "docks",
+        "arena",
+        "chiaroscuro",
+        "lighthouses",
+        "judge"
+      ]
+    },
+    {
+      "name": "spec_docks_micro",
+      "source_json": "tables/table_spec_docks_micro.json",
+      "table_id_fnv1a": "0x96acd17e",
+      "n": 16,
+      "k": 8,
+      "trained_on": [
+        "docks"
+      ]
+    },
+    {
+      "name": "spec_docks_full",
+      "source_json": "tables/table_spec_docks_full.json",
+      "table_id_fnv1a": "0xe885901d",
+      "n": 64,
+      "k": 16,
+      "trained_on": [
+        "docks"
+      ]
+    },
+    {
+      "name": "spec_arena_micro",
+      "source_json": "tables/table_spec_arena_micro.json",
+      "table_id_fnv1a": "0x3296fe83",
+      "n": 16,
+      "k": 8,
+      "trained_on": [
+        "arena"
+      ]
+    },
+    {
+      "name": "spec_arena_full",
+      "source_json": "tables/table_spec_arena_full.json",
+      "table_id_fnv1a": "0xd965c3a1",
+      "n": 64,
+      "k": 16,
+      "trained_on": [
+        "arena"
+      ]
+    },
+    {
+      "name": "spec_chiaroscuro_micro",
+      "source_json": "tables/table_spec_chiaroscuro_micro.json",
+      "table_id_fnv1a": "0x793ebed0",
+      "n": 16,
+      "k": 8,
+      "trained_on": [
+        "chiaroscuro"
+      ]
+    },
+    {
+      "name": "spec_chiaroscuro_full",
+      "source_json": "tables/table_spec_chiaroscuro_full.json",
+      "table_id_fnv1a": "0x87daefb1",
+      "n": 64,
+      "k": 16,
+      "trained_on": [
+        "chiaroscuro"
+      ]
+    },
+    {
+      "name": "spec_lighthouses_micro",
+      "source_json": "tables/table_spec_lighthouses_micro.json",
+      "table_id_fnv1a": "0x5f38a378",
+      "n": 16,
+      "k": 8,
+      "trained_on": [
+        "lighthouses"
+      ]
+    },
+    {
+      "name": "spec_lighthouses_full",
+      "source_json": "tables/table_spec_lighthouses_full.json",
+      "table_id_fnv1a": "0x4a5dfc15",
+      "n": 64,
+      "k": 16,
+      "trained_on": [
+        "lighthouses"
+      ]
+    },
+    {
+      "name": "spec_judge_micro",
+      "source_json": "tables/table_spec_judge_micro.json",
+      "table_id_fnv1a": "0x5d1ddd7b",
+      "n": 16,
+      "k": 8,
+      "trained_on": [
+        "judge"
+      ]
+    },
+    {
+      "name": "spec_judge_full",
+      "source_json": "tables/table_spec_judge_full.json",
+      "table_id_fnv1a": "0xbe90f6af",
+      "n": 64,
+      "k": 16,
+      "trained_on": [
+        "judge"
+      ]
+    }
+  ]
+}

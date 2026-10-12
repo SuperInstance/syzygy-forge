@@ -1,0 +1,828 @@
+{
+  "profile": "spec-lighthouses-micro",
+  "n": 16,
+  "k": 8,
+  "feature_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "rows": [
+    [
+      24,
+      19,
+      31,
+      24,
+      24,
+      24,
+      24,
+      24
+    ],
+    [
+      92,
+      70,
+      116,
+      92,
+      92,
+      93,
+      92,
+      104
+    ],
+    [
+      77,
+      33,
+      160,
+      45,
+      110,
+      77,
+      78,
+      43
+    ],
+    [
+      34,
+      27,
+      42,
+      34,
+      34,
+      34,
+      34,
+      34
+    ],
+    [
+      121,
+      90,
+      151,
+      118,
+      124,
+      121,
+      121,
+      136
+    ],
+    [
+      96,
+      42,
+      182,
+      120,
+      71,
+      103,
+      88,
+      167
+    ],
+    [
+      77,
+      36,
+      162,
+      102,
+      52,
+      74,
+      80,
+      74
+    ],
+    [
+      108,
+      50,
+      189,
+      84,
+      132,
+      107,
+      109,
+      73
+    ],
+    [
+      56,
+      45,
+      70,
+      58,
+      55,
+      56,
+      56,
+      61
+    ],
+    [
+      175,
+      124,
+      209,
+      174,
+      177,
+      175,
+      175,
+      192
+    ],
+    [
+      45,
+      26,
+      78,
+      38,
+      51,
+      44,
+      45,
+      34
+    ],
+    [
+      44,
+      35,
+      54,
+      45,
+      43,
+      44,
+      44,
+      47
+    ],
+    [
+      49,
+      18,
+      131,
+      35,
+      63,
+      49,
+      49,
+      25
+    ],
+    [
+      67,
+      39,
+      104,
+      83,
+      50,
+      68,
+      66,
+      87
+    ],
+    [
+      5,
+      2,
+      11,
+      6,
+      5,
+      5,
+      5,
+      6
+    ],
+    [
+      71,
+      53,
+      95,
+      64,
+      78,
+      71,
+      72,
+      69
+    ]
+  ],
+  "assignment_rule": "nearest centroid; equivalently dot-product argmax of inference_rows with inference_bias (exact identity)",
+  "inference_rows": [
+    [
+      48,
+      38,
+      62,
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    [
+      184,
+      140,
+      232,
+      184,
+      184,
+      186,
+      184,
+      208
+    ],
+    [
+      154,
+      66,
+      320,
+      90,
+      220,
+      154,
+      156,
+      86
+    ],
+    [
+      68,
+      54,
+      84,
+      68,
+      68,
+      68,
+      68,
+      68
+    ],
+    [
+      242,
+      180,
+      302,
+      236,
+      248,
+      242,
+      242,
+      272
+    ],
+    [
+      192,
+      84,
+      364,
+      240,
+      142,
+      206,
+      176,
+      334
+    ],
+    [
+      154,
+      72,
+      324,
+      204,
+      104,
+      148,
+      160,
+      148
+    ],
+    [
+      216,
+      100,
+      378,
+      168,
+      264,
+      214,
+      218,
+      146
+    ],
+    [
+      112,
+      90,
+      140,
+      116,
+      110,
+      112,
+      112,
+      122
+    ],
+    [
+      350,
+      248,
+      418,
+      348,
+      354,
+      350,
+      350,
+      384
+    ],
+    [
+      90,
+      52,
+      156,
+      76,
+      102,
+      88,
+      90,
+      68
+    ],
+    [
+      88,
+      70,
+      108,
+      90,
+      86,
+      88,
+      88,
+      94
+    ],
+    [
+      98,
+      36,
+      262,
+      70,
+      126,
+      98,
+      98,
+      50
+    ],
+    [
+      134,
+      78,
+      208,
+      166,
+      100,
+      136,
+      132,
+      174
+    ],
+    [
+      10,
+      4,
+      22,
+      12,
+      10,
+      10,
+      10,
+      12
+    ],
+    [
+      142,
+      106,
+      190,
+      128,
+      156,
+      142,
+      144,
+      138
+    ]
+  ],
+  "inference_bias": [
+    -4778,
+    -71677,
+    -60605,
+    -9429,
+    -122620,
+    -109787,
+    -63929,
+    -103024,
+    -26443,
+    -249401,
+    -17947,
+    -16032,
+    -30507,
+    -42764,
+    -297,
+    -42041
+  ],
+  "table_id_fnv1a": "0x5f38a378",
+  "training": {
+    "seed": 20261011,
+    "subsample_cells": 200000,
+    "iterations_run": 62,
+    "converged": true,
+    "iteration_log": [
+      {
+        "iter": 0,
+        "rows_changed": 16,
+        "dead": 0,
+        "min_count": 2537,
+        "max_count": 28392
+      },
+      {
+        "iter": 1,
+        "rows_changed": 16,
+        "dead": 0,
+        "min_count": 3649,
+        "max_count": 24288
+      },
+      {
+        "iter": 2,
+        "rows_changed": 16,
+        "dead": 0,
+        "min_count": 3648,
+        "max_count": 25453
+      },
+      {
+        "iter": 3,
+        "rows_changed": 15,
+        "dead": 0,
+        "min_count": 3597,
+        "max_count": 26686
+      },
+      {
+        "iter": 4,
+        "rows_changed": 14,
+        "dead": 0,
+        "min_count": 3640,
+        "max_count": 27945
+      },
+      {
+        "iter": 5,
+        "rows_changed": 15,
+        "dead": 0,
+        "min_count": 3589,
+        "max_count": 28477
+      },
+      {
+        "iter": 6,
+        "rows_changed": 12,
+        "dead": 0,
+        "min_count": 3315,
+        "max_count": 28711
+      },
+      {
+        "iter": 7,
+        "rows_changed": 12,
+        "dead": 0,
+        "min_count": 3095,
+        "max_count": 28871
+      },
+      {
+        "iter": 8,
+        "rows_changed": 12,
+        "dead": 0,
+        "min_count": 2937,
+        "max_count": 29008
+      },
+      {
+        "iter": 9,
+        "rows_changed": 11,
+        "dead": 0,
+        "min_count": 2786,
+        "max_count": 29139
+      },
+      {
+        "iter": 10,
+        "rows_changed": 13,
+        "dead": 0,
+        "min_count": 2670,
+        "max_count": 29263
+      },
+      {
+        "iter": 11,
+        "rows_changed": 12,
+        "dead": 0,
+        "min_count": 2583,
+        "max_count": 29300
+      },
+      {
+        "iter": 12,
+        "rows_changed": 13,
+        "dead": 0,
+        "min_count": 2507,
+        "max_count": 29375
+      },
+      {
+        "iter": 13,
+        "rows_changed": 12,
+        "dead": 0,
+        "min_count": 2428,
+        "max_count": 29880
+      },
+      {
+        "iter": 14,
+        "rows_changed": 13,
+        "dead": 0,
+        "min_count": 2355,
+        "max_count": 30671
+      },
+      {
+        "iter": 15,
+        "rows_changed": 9,
+        "dead": 0,
+        "min_count": 2271,
+        "max_count": 31306
+      },
+      {
+        "iter": 16,
+        "rows_changed": 10,
+        "dead": 0,
+        "min_count": 2177,
+        "max_count": 31460
+      },
+      {
+        "iter": 17,
+        "rows_changed": 8,
+        "dead": 0,
+        "min_count": 2105,
+        "max_count": 31750
+      },
+      {
+        "iter": 18,
+        "rows_changed": 11,
+        "dead": 0,
+        "min_count": 2018,
+        "max_count": 31792
+      },
+      {
+        "iter": 19,
+        "rows_changed": 8,
+        "dead": 0,
+        "min_count": 1925,
+        "max_count": 31835
+      },
+      {
+        "iter": 20,
+        "rows_changed": 8,
+        "dead": 0,
+        "min_count": 1838,
+        "max_count": 31835
+      },
+      {
+        "iter": 21,
+        "rows_changed": 11,
+        "dead": 0,
+        "min_count": 1770,
+        "max_count": 32433
+      },
+      {
+        "iter": 22,
+        "rows_changed": 6,
+        "dead": 0,
+        "min_count": 1700,
+        "max_count": 33254
+      },
+      {
+        "iter": 23,
+        "rows_changed": 9,
+        "dead": 0,
+        "min_count": 1631,
+        "max_count": 33254
+      },
+      {
+        "iter": 24,
+        "rows_changed": 7,
+        "dead": 0,
+        "min_count": 1560,
+        "max_count": 33267
+      },
+      {
+        "iter": 25,
+        "rows_changed": 6,
+        "dead": 0,
+        "min_count": 1469,
+        "max_count": 33311
+      },
+      {
+        "iter": 26,
+        "rows_changed": 8,
+        "dead": 0,
+        "min_count": 1400,
+        "max_count": 33311
+      },
+      {
+        "iter": 27,
+        "rows_changed": 6,
+        "dead": 0,
+        "min_count": 1342,
+        "max_count": 33659
+      },
+      {
+        "iter": 28,
+        "rows_changed": 7,
+        "dead": 0,
+        "min_count": 1286,
+        "max_count": 33674
+      },
+      {
+        "iter": 29,
+        "rows_changed": 7,
+        "dead": 0,
+        "min_count": 1258,
+        "max_count": 33674
+      },
+      {
+        "iter": 30,
+        "rows_changed": 8,
+        "dead": 0,
+        "min_count": 1241,
+        "max_count": 33693
+      },
+      {
+        "iter": 31,
+        "rows_changed": 6,
+        "dead": 0,
+        "min_count": 1218,
+        "max_count": 33701
+      },
+      {
+        "iter": 32,
+        "rows_changed": 5,
+        "dead": 0,
+        "min_count": 1207,
+        "max_count": 33701
+      },
+      {
+        "iter": 33,
+        "rows_changed": 8,
+        "dead": 0,
+        "min_count": 1198,
+        "max_count": 33701
+      },
+      {
+        "iter": 34,
+        "rows_changed": 6,
+        "dead": 0,
+        "min_count": 1176,
+        "max_count": 33967
+      },
+      {
+        "iter": 35,
+        "rows_changed": 7,
+        "dead": 0,
+        "min_count": 1155,
+        "max_count": 33967
+      },
+      {
+        "iter": 36,
+        "rows_changed": 6,
+        "dead": 0,
+        "min_count": 1139,
+        "max_count": 33967
+      },
+      {
+        "iter": 37,
+        "rows_changed": 4,
+        "dead": 0,
+        "min_count": 1125,
+        "max_count": 34239
+      },
+      {
+        "iter": 38,
+        "rows_changed": 6,
+        "dead": 0,
+        "min_count": 1113,
+        "max_count": 34516
+      },
+      {
+        "iter": 39,
+        "rows_changed": 5,
+        "dead": 0,
+        "min_count": 1103,
+        "max_count": 34907
+      },
+      {
+        "iter": 40,
+        "rows_changed": 6,
+        "dead": 0,
+        "min_count": 1096,
+        "max_count": 35503
+      },
+      {
+        "iter": 41,
+        "rows_changed": 7,
+        "dead": 0,
+        "min_count": 1086,
+        "max_count": 35831
+      },
+      {
+        "iter": 42,
+        "rows_changed": 4,
+        "dead": 0,
+        "min_count": 1083,
+        "max_count": 36135
+      },
+      {
+        "iter": 43,
+        "rows_changed": 4,
+        "dead": 0,
+        "min_count": 1083,
+        "max_count": 36135
+      },
+      {
+        "iter": 44,
+        "rows_changed": 2,
+        "dead": 0,
+        "min_count": 1083,
+        "max_count": 36135
+      },
+      {
+        "iter": 45,
+        "rows_changed": 1,
+        "dead": 0,
+        "min_count": 1083,
+        "max_count": 36135
+      },
+      {
+        "iter": 46,
+        "rows_changed": 2,
+        "dead": 0,
+        "min_count": 1083,
+        "max_count": 36135
+      },
+      {
+        "iter": 47,
+        "rows_changed": 2,
+        "dead": 0,
+        "min_count": 1083,
+        "max_count": 36135
+      },
+      {
+        "iter": 48,
+        "rows_changed": 4,
+        "dead": 0,
+        "min_count": 1083,
+        "max_count": 36347
+      },
+      {
+        "iter": 49,
+        "rows_changed": 5,
+        "dead": 0,
+        "min_count": 1083,
+        "max_count": 36617
+      },
+      {
+        "iter": 50,
+        "rows_changed": 5,
+        "dead": 0,
+        "min_count": 1083,
+        "max_count": 36872
+      },
+      {
+        "iter": 51,
+        "rows_changed": 6,
+        "dead": 0,
+        "min_count": 1083,
+        "max_count": 37287
+      },
+      {
+        "iter": 52,
+        "rows_changed": 2,
+        "dead": 0,
+        "min_count": 1081,
+        "max_count": 37723
+      },
+      {
+        "iter": 53,
+        "rows_changed": 2,
+        "dead": 0,
+        "min_count": 1078,
+        "max_count": 37723
+      },
+      {
+        "iter": 54,
+        "rows_changed": 2,
+        "dead": 0,
+        "min_count": 1078,
+        "max_count": 37723
+      },
+      {
+        "iter": 55,
+        "rows_changed": 3,
+        "dead": 0,
+        "min_count": 1078,
+        "max_count": 37723
+      },
+      {
+        "iter": 56,
+        "rows_changed": 3,
+        "dead": 0,
+        "min_count": 1078,
+        "max_count": 37740
+      },
+      {
+        "iter": 57,
+        "rows_changed": 3,
+        "dead": 0,
+        "min_count": 1078,
+        "max_count": 37762
+      },
+      {
+        "iter": 58,
+        "rows_changed": 2,
+        "dead": 0,
+        "min_count": 1078,
+        "max_count": 37830
+      },
+      {
+        "iter": 59,
+        "rows_changed": 1,
+        "dead": 0,
+        "min_count": 1078,
+        "max_count": 37845
+      },
+      {
+        "iter": 60,
+        "rows_changed": 1,
+        "dead": 0,
+        "min_count": 1078,
+        "max_count": 37871
+      },
+      {
+        "iter": 61,
+        "rows_changed": 0,
+        "dead": 0,
+        "min_count": 1078,
+        "max_count": 37906
+      }
+    ]
+  },
+  "train_usage_full_set": [
+    180081,
+    81654,
+    40308,
+    266108,
+    35247,
+    20969,
+    24180,
+    29199,
+    167180,
+    7350,
+    66293,
+    224404,
+    27563,
+    55153,
+    99309,
+    84282
+  ],
+  "train_dead_codewords": [],
+  "corpus_v1": {
+    "trained_on_clips": [
+      "lighthouses"
+    ],
+    "raster": "stage-0 160x96 px -> 80x24 cells",
+    "train_cells_total": 1409280,
+    "split_rule": "per clip: frame index % 5 == 4 -> test"
+  }
+}

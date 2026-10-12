@@ -1,0 +1,615 @@
+{
+  "profile": "pooled-micro",
+  "n": 16,
+  "k": 8,
+  "feature_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "rows": [
+    [
+      212,
+      191,
+      228,
+      213,
+      211,
+      212,
+      212,
+      217
+    ],
+    [
+      104,
+      87,
+      121,
+      105,
+      103,
+      105,
+      104,
+      111
+    ],
+    [
+      81,
+      34,
+      150,
+      109,
+      54,
+      84,
+      79,
+      107
+    ],
+    [
+      40,
+      31,
+      53,
+      40,
+      40,
+      40,
+      40,
+      40
+    ],
+    [
+      178,
+      159,
+      194,
+      179,
+      177,
+      178,
+      178,
+      182
+    ],
+    [
+      151,
+      129,
+      170,
+      151,
+      151,
+      151,
+      151,
+      153
+    ],
+    [
+      83,
+      35,
+      154,
+      55,
+      110,
+      79,
+      86,
+      49
+    ],
+    [
+      53,
+      41,
+      68,
+      55,
+      52,
+      54,
+      53,
+      57
+    ],
+    [
+      120,
+      62,
+      181,
+      146,
+      94,
+      125,
+      115,
+      159
+    ],
+    [
+      117,
+      63,
+      180,
+      98,
+      137,
+      114,
+      121,
+      94
+    ],
+    [
+      16,
+      14,
+      19,
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    [
+      125,
+      114,
+      135,
+      125,
+      125,
+      125,
+      125,
+      130
+    ],
+    [
+      68,
+      50,
+      89,
+      70,
+      66,
+      68,
+      68,
+      72
+    ],
+    [
+      86,
+      69,
+      103,
+      86,
+      87,
+      86,
+      86,
+      88
+    ],
+    [
+      53,
+      23,
+      109,
+      44,
+      61,
+      51,
+      55,
+      34
+    ],
+    [
+      29,
+      23,
+      38,
+      29,
+      29,
+      29,
+      29,
+      28
+    ]
+  ],
+  "assignment_rule": "nearest centroid; equivalently dot-product argmax of inference_rows with inference_bias (exact identity)",
+  "inference_rows": [
+    [
+      424,
+      382,
+      456,
+      426,
+      422,
+      424,
+      424,
+      434
+    ],
+    [
+      208,
+      174,
+      242,
+      210,
+      206,
+      210,
+      208,
+      222
+    ],
+    [
+      162,
+      68,
+      300,
+      218,
+      108,
+      168,
+      158,
+      214
+    ],
+    [
+      80,
+      62,
+      106,
+      80,
+      80,
+      80,
+      80,
+      80
+    ],
+    [
+      356,
+      318,
+      388,
+      358,
+      354,
+      356,
+      356,
+      364
+    ],
+    [
+      302,
+      258,
+      340,
+      302,
+      302,
+      302,
+      302,
+      306
+    ],
+    [
+      166,
+      70,
+      308,
+      110,
+      220,
+      158,
+      172,
+      98
+    ],
+    [
+      106,
+      82,
+      136,
+      110,
+      104,
+      108,
+      106,
+      114
+    ],
+    [
+      240,
+      124,
+      362,
+      292,
+      188,
+      250,
+      230,
+      318
+    ],
+    [
+      234,
+      126,
+      360,
+      196,
+      274,
+      228,
+      242,
+      188
+    ],
+    [
+      32,
+      28,
+      38,
+      32,
+      32,
+      32,
+      32,
+      32
+    ],
+    [
+      250,
+      228,
+      270,
+      250,
+      250,
+      250,
+      250,
+      260
+    ],
+    [
+      136,
+      100,
+      178,
+      140,
+      132,
+      136,
+      136,
+      144
+    ],
+    [
+      172,
+      138,
+      206,
+      172,
+      174,
+      172,
+      172,
+      176
+    ],
+    [
+      106,
+      46,
+      218,
+      88,
+      122,
+      102,
+      110,
+      68
+    ],
+    [
+      58,
+      46,
+      76,
+      58,
+      58,
+      58,
+      58,
+      56
+    ]
+  ],
+  "inference_bias": [
+    -360276,
+    -88822,
+    -69760,
+    -13370,
+    -254463,
+    -182955,
+    -62993,
+    -23817,
+    -135288,
+    -114904,
+    -2093,
+    -126246,
+    -38733,
+    -60267,
+    -27658,
+    -6962
+  ],
+  "table_id_fnv1a": "0xdf32b48c",
+  "training": {
+    "seed": 20261011,
+    "subsample_cells": 200000,
+    "iterations_run": 31,
+    "converged": true,
+    "iteration_log": [
+      {
+        "iter": 0,
+        "rows_changed": 16,
+        "dead": 0,
+        "min_count": 3816,
+        "max_count": 42671
+      },
+      {
+        "iter": 1,
+        "rows_changed": 16,
+        "dead": 0,
+        "min_count": 4552,
+        "max_count": 31863
+      },
+      {
+        "iter": 2,
+        "rows_changed": 16,
+        "dead": 0,
+        "min_count": 4513,
+        "max_count": 26287
+      },
+      {
+        "iter": 3,
+        "rows_changed": 14,
+        "dead": 0,
+        "min_count": 4297,
+        "max_count": 22742
+      },
+      {
+        "iter": 4,
+        "rows_changed": 16,
+        "dead": 0,
+        "min_count": 3991,
+        "max_count": 20415
+      },
+      {
+        "iter": 5,
+        "rows_changed": 15,
+        "dead": 0,
+        "min_count": 3869,
+        "max_count": 19484
+      },
+      {
+        "iter": 6,
+        "rows_changed": 14,
+        "dead": 0,
+        "min_count": 3848,
+        "max_count": 19288
+      },
+      {
+        "iter": 7,
+        "rows_changed": 14,
+        "dead": 0,
+        "min_count": 3874,
+        "max_count": 19959
+      },
+      {
+        "iter": 8,
+        "rows_changed": 15,
+        "dead": 0,
+        "min_count": 3894,
+        "max_count": 20288
+      },
+      {
+        "iter": 9,
+        "rows_changed": 14,
+        "dead": 0,
+        "min_count": 3928,
+        "max_count": 20789
+      },
+      {
+        "iter": 10,
+        "rows_changed": 14,
+        "dead": 0,
+        "min_count": 3957,
+        "max_count": 20809
+      },
+      {
+        "iter": 11,
+        "rows_changed": 14,
+        "dead": 0,
+        "min_count": 3998,
+        "max_count": 20927
+      },
+      {
+        "iter": 12,
+        "rows_changed": 11,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 21237
+      },
+      {
+        "iter": 13,
+        "rows_changed": 12,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 21696
+      },
+      {
+        "iter": 14,
+        "rows_changed": 9,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 21808
+      },
+      {
+        "iter": 15,
+        "rows_changed": 10,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 21878
+      },
+      {
+        "iter": 16,
+        "rows_changed": 8,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 22068
+      },
+      {
+        "iter": 17,
+        "rows_changed": 5,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 22197
+      },
+      {
+        "iter": 18,
+        "rows_changed": 4,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 22197
+      },
+      {
+        "iter": 19,
+        "rows_changed": 4,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 22368
+      },
+      {
+        "iter": 20,
+        "rows_changed": 5,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 22269
+      },
+      {
+        "iter": 21,
+        "rows_changed": 6,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 21972
+      },
+      {
+        "iter": 22,
+        "rows_changed": 7,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 21721
+      },
+      {
+        "iter": 23,
+        "rows_changed": 4,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 21607
+      },
+      {
+        "iter": 24,
+        "rows_changed": 2,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 21778
+      },
+      {
+        "iter": 25,
+        "rows_changed": 1,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 22062
+      },
+      {
+        "iter": 26,
+        "rows_changed": 3,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 22062
+      },
+      {
+        "iter": 27,
+        "rows_changed": 3,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 22188
+      },
+      {
+        "iter": 28,
+        "rows_changed": 1,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 22270
+      },
+      {
+        "iter": 29,
+        "rows_changed": 1,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 22270
+      },
+      {
+        "iter": 30,
+        "rows_changed": 0,
+        "dead": 0,
+        "min_count": 4016,
+        "max_count": 22270
+      }
+    ]
+  },
+  "train_usage_full_set": [
+    164301,
+    679441,
+    261038,
+    927500,
+    402747,
+    538502,
+    237094,
+    793207,
+    222647,
+    239077,
+    628531,
+    712276,
+    703643,
+    611568,
+    330501,
+    836567
+  ],
+  "train_dead_codewords": [],
+  "corpus_v1": {
+    "trained_on_clips": [
+      "docks",
+      "arena",
+      "chiaroscuro",
+      "lighthouses",
+      "judge"
+    ],
+    "raster": "stage-0 160x96 px -> 80x24 cells",
+    "train_cells_total": 8288640,
+    "split_rule": "per clip: frame index % 5 == 4 -> test"
+  }
+}
