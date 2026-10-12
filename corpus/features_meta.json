@@ -1,0 +1,42 @@
+{
+  "source_nv12": "~/workspace/syzygy-video/work/docks_base.nv12",
+  "source_video": "~/workspace/user/media_library/video/5a/5acbb9b592d6c5b15d516318b6e1a5b534fc55c36b5c71656c79d8a9539475e0.mp4",
+  "grid": {
+    "cols": 148,
+    "rows": 80,
+    "frames": 297,
+    "cells_per_frame": 11840,
+    "total_cells": 3516480
+  },
+  "extractor": "src/extract_features.c (kernel headers included read-only; features replicate syz_fused's per-cell reads; fixed sel/tone computed by the kernel's own syz_ste_select4 / syz_fused_tone)",
+  "features": [
+    "mean_luma",
+    "min_luma",
+    "max_luma",
+    "top_mean",
+    "bottom_mean",
+    "left_mean",
+    "right_mean",
+    "green",
+    "red",
+    "blue",
+    "cell_luma",
+    "green_minus_rb",
+    "grad_y",
+    "grad_x",
+    "diag_diff",
+    "texture"
+  ],
+  "feature_notes": "int16; block stats over the cell's 8 luma taps (means round-half-up); features 7,10 are the exact two values the fixed tokenizer scores (green, cell_luma). Micro K=8 uses features 0-7; full K=16 uses all.",
+  "record_layout": "per cell: 16 x int16 features, uint8 fixed_sel, uint8 fixed_tone_idx; frame-major, row-major",
+  "fixed_sel_histogram_all_frames": [
+    1452,
+    793,
+    3514235,
+    0
+  ],
+  "tone_verification_vs_shipped_corpus": {
+    "frames_checked": 297,
+    "mismatched_cells": 0
+  }
+}
