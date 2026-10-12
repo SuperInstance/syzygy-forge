@@ -1,0 +1,64 @@
+v1 recomputation vs v1 scores.json: IDENTICAL
+v3 records: 160 / 160 (failed attempts retained: 0; missing: 0)
+
+=== v3 headline (strict; digest vs SAME-BATCH learned_cal) ===
+reader     digest     cal   d-cal  blind1  ceiling  cal@v2
+minimax   0.850  0.370  +0.480  0.310  0.475   0.345
+glm       1.000  0.400  +0.600  0.280  0.475   0.380
+
+=== per-question (digest | cal), const baseline ===
+minimax   Q1: 0.850 | 0.275   const=BR@0.42 unp D/C=6/1
+minimax   Q2: 0.850 | 0.250   const=TL@0.38 unp D/C=6/1
+minimax   Q3: 0.850 | 0.375   const=right@0.53 unp D/C=6/1
+minimax   Q4: 0.850 | 0.500   const=right@0.55 unp D/C=6/1
+minimax   Q5: 0.850 | 0.450   const=top@0.50 unp D/C=6/1
+glm       Q1: 1.000 | 0.350   const=BR@0.42 unp D/C=0/0
+glm       Q2: 1.000 | 0.325   const=TL@0.38 unp D/C=0/2
+glm       Q3: 1.000 | 0.525   const=right@0.53 unp D/C=0/4
+glm       Q4: 1.000 | 0.425   const=right@0.55 unp D/C=0/4
+glm       Q5: 1.000 | 0.375   const=top@0.50 unp D/C=0/4
+
+=== parsed-only overall ===
+minimax   digest 1.000 cal 0.379 blind(v1) 0.339 (unparsed D/C = 30/5 of 200)
+glm       digest 1.000 cal 0.430 blind(v1) 0.400 (unparsed D/C = 0/14 of 200)
+
+=== clear-margin subset ===
+minimax   digest       0.841
+minimax   learned_cal  0.397
+glm       digest       1.000
+glm       learned_cal  0.341
+
+=== paired head-to-head digest vs cal (answer slots of 200) ===
+minimax: {'digest_only': 103, 'learned_cal_only': 7, 'both': 67, 'neither': 23}
+   Q1: {'digest_only': 23, 'learned_cal_only': 0, 'both': 11, 'neither': 6}
+   Q2: {'digest_only': 25, 'learned_cal_only': 1, 'both': 9, 'neither': 5}
+   Q3: {'digest_only': 20, 'learned_cal_only': 1, 'both': 14, 'neither': 5}
+   Q4: {'digest_only': 17, 'learned_cal_only': 3, 'both': 17, 'neither': 3}
+   Q5: {'digest_only': 18, 'learned_cal_only': 2, 'both': 16, 'neither': 4}
+glm: {'digest_only': 120, 'learned_cal_only': 0, 'both': 80, 'neither': 0}
+   Q1: {'digest_only': 26, 'learned_cal_only': 0, 'both': 14, 'neither': 0}
+   Q2: {'digest_only': 27, 'learned_cal_only': 0, 'both': 13, 'neither': 0}
+   Q3: {'digest_only': 19, 'learned_cal_only': 0, 'both': 21, 'neither': 0}
+   Q4: {'digest_only': 23, 'learned_cal_only': 0, 'both': 17, 'neither': 0}
+   Q5: {'digest_only': 25, 'learned_cal_only': 0, 'both': 15, 'neither': 0}
+
+=== prompt sizes (chars, from records) ===
+digest       mean 6924 min 6906 max 6943
+learned_cal  mean 16549 min 16549 max 16549
+digest block chars: mean 1592 (grid block: 11919)
+
+=== latencies (mean s) ===
+minimax   digest 16.9 cal 33.1
+glm       digest 13.2 cal 49.4
+
+=== count-vs-mass disagreement frames ===
+Q4: frames [0, 23, 197] digest-correct {'minimax': 2, 'glm': 3} cal-correct {'minimax': 2, 'glm': 1}
+Q5: frames [15, 83] digest-correct {'minimax': 2, 'glm': 2} cal-correct {'minimax': 2, 'glm': 1}
+
+=== frame 83 ===
+minimax   digest       parsed={'Q1': 'TR', 'Q2': 'TL', 'Q3': 'right', 'Q4': 'left', 'Q5': 'middle'} correct={'Q1': True, 'Q2': True, 'Q3': True, 'Q4': True, 'Q5': True}
+minimax   learned_cal  parsed={'Q1': 'BR', 'Q2': 'TL', 'Q3': 'right', 'Q4': 'right', 'Q5': 'middle'} correct={'Q1': False, 'Q2': True, 'Q3': True, 'Q4': False, 'Q5': True}
+glm       digest       parsed={'Q1': 'TR', 'Q2': 'TL', 'Q3': 'right', 'Q4': 'left', 'Q5': 'middle'} correct={'Q1': True, 'Q2': True, 'Q3': True, 'Q4': True, 'Q5': True}
+glm       learned_cal  parsed={'Q1': 'TR', 'Q2': 'BL', 'Q3': 'right', 'Q4': 'right', 'Q5': 'middle'} correct={'Q1': True, 'Q2': False, 'Q3': True, 'Q4': False, 'Q5': True}
+
+failures recorded: 276

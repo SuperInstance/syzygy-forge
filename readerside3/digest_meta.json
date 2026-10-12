@@ -1,0 +1,675 @@
+{
+  "gates": {
+    "A_digest_equals_frozen_computation": true,
+    "B_strip_consistency": true,
+    "C_oracle_from_digest_text": {
+      "Q1": 40,
+      "Q2": 40,
+      "Q3": 40,
+      "Q4": 40,
+      "Q5": 40
+    },
+    "C_oracle_total": "200/200",
+    "strips_oracle": {
+      "Q1": 40,
+      "Q2": 40,
+      "Q4": 40
+    },
+    "q3_half_total_heuristic": "35/40"
+  },
+  "digest_chars": {
+    "min": 1574,
+    "mean": 1592.3,
+    "max": 1611
+  },
+  "grid_chars": 11919,
+  "sufficiency_audit": {
+    "Q1": "quadrant sums line (argmax) \u2014 also quadrant means, same order",
+    "Q2": "quadrant sums line (argmin)",
+    "Q3": "brightness centroid x line vs centre 74.00 (half sums do NOT determine this; strips-oracle Q3 heuristic reported separately)",
+    "Q4": "edge counts by half line (>= rule matches frozen definition)",
+    "Q5": "edge counts by band line (first-max in top/middle/bottom order)"
+  },
+  "per_frame": {
+    "0": {
+      "digest_chars": 1601,
+      "oracle_text": {
+        "Q1": "TL",
+        "Q2": "BL",
+        "Q3": "left",
+        "Q4": "right",
+        "Q5": "middle"
+      },
+      "oracle_strips": {
+        "Q1": "TL",
+        "Q2": "BL",
+        "Q3_heuristic": "left",
+        "Q4": "right"
+      }
+    },
+    "8": {
+      "digest_chars": 1585,
+      "oracle_text": {
+        "Q1": "BL",
+        "Q2": "TL",
+        "Q3": "right",
+        "Q4": "right",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "BL",
+        "Q2": "TL",
+        "Q3_heuristic": "right",
+        "Q4": "right"
+      }
+    },
+    "15": {
+      "digest_chars": 1607,
+      "oracle_text": {
+        "Q1": "BR",
+        "Q2": "TL",
+        "Q3": "right",
+        "Q4": "right",
+        "Q5": "middle"
+      },
+      "oracle_strips": {
+        "Q1": "BR",
+        "Q2": "TL",
+        "Q3_heuristic": "right",
+        "Q4": "right"
+      }
+    },
+    "23": {
+      "digest_chars": 1585,
+      "oracle_text": {
+        "Q1": "TR",
+        "Q2": "TL",
+        "Q3": "right",
+        "Q4": "right",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "TR",
+        "Q2": "TL",
+        "Q3_heuristic": "right",
+        "Q4": "right"
+      }
+    },
+    "30": {
+      "digest_chars": 1606,
+      "oracle_text": {
+        "Q1": "BR",
+        "Q2": "BL",
+        "Q3": "right",
+        "Q4": "right",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "BR",
+        "Q2": "BL",
+        "Q3_heuristic": "right",
+        "Q4": "right"
+      }
+    },
+    "38": {
+      "digest_chars": 1585,
+      "oracle_text": {
+        "Q1": "TR",
+        "Q2": "TL",
+        "Q3": "right",
+        "Q4": "right",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "TR",
+        "Q2": "TL",
+        "Q3_heuristic": "right",
+        "Q4": "right"
+      }
+    },
+    "46": {
+      "digest_chars": 1587,
+      "oracle_text": {
+        "Q1": "TR",
+        "Q2": "BL",
+        "Q3": "right",
+        "Q4": "right",
+        "Q5": "middle"
+      },
+      "oracle_strips": {
+        "Q1": "TR",
+        "Q2": "BL",
+        "Q3_heuristic": "right",
+        "Q4": "right"
+      }
+    },
+    "53": {
+      "digest_chars": 1581,
+      "oracle_text": {
+        "Q1": "TR",
+        "Q2": "TL",
+        "Q3": "right",
+        "Q4": "right",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "TR",
+        "Q2": "TL",
+        "Q3_heuristic": "right",
+        "Q4": "right"
+      }
+    },
+    "61": {
+      "digest_chars": 1588,
+      "oracle_text": {
+        "Q1": "BR",
+        "Q2": "BL",
+        "Q3": "right",
+        "Q4": "right",
+        "Q5": "bottom"
+      },
+      "oracle_strips": {
+        "Q1": "BR",
+        "Q2": "BL",
+        "Q3_heuristic": "right",
+        "Q4": "right"
+      }
+    },
+    "68": {
+      "digest_chars": 1578,
+      "oracle_text": {
+        "Q1": "TL",
+        "Q2": "TR",
+        "Q3": "left",
+        "Q4": "right",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "TL",
+        "Q2": "TR",
+        "Q3_heuristic": "left",
+        "Q4": "right"
+      }
+    },
+    "76": {
+      "digest_chars": 1587,
+      "oracle_text": {
+        "Q1": "BR",
+        "Q2": "TL",
+        "Q3": "right",
+        "Q4": "right",
+        "Q5": "bottom"
+      },
+      "oracle_strips": {
+        "Q1": "BR",
+        "Q2": "TL",
+        "Q3_heuristic": "right",
+        "Q4": "right"
+      }
+    },
+    "83": {
+      "digest_chars": 1574,
+      "oracle_text": {
+        "Q1": "TR",
+        "Q2": "TL",
+        "Q3": "right",
+        "Q4": "left",
+        "Q5": "middle"
+      },
+      "oracle_strips": {
+        "Q1": "TR",
+        "Q2": "TL",
+        "Q3_heuristic": "right",
+        "Q4": "left"
+      }
+    },
+    "91": {
+      "digest_chars": 1583,
+      "oracle_text": {
+        "Q1": "BR",
+        "Q2": "BL",
+        "Q3": "right",
+        "Q4": "left",
+        "Q5": "bottom"
+      },
+      "oracle_strips": {
+        "Q1": "BR",
+        "Q2": "BL",
+        "Q3_heuristic": "right",
+        "Q4": "left"
+      }
+    },
+    "99": {
+      "digest_chars": 1601,
+      "oracle_text": {
+        "Q1": "BL",
+        "Q2": "TR",
+        "Q3": "left",
+        "Q4": "right",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "BL",
+        "Q2": "TR",
+        "Q3_heuristic": "left",
+        "Q4": "right"
+      }
+    },
+    "106": {
+      "digest_chars": 1586,
+      "oracle_text": {
+        "Q1": "BL",
+        "Q2": "BR",
+        "Q3": "left",
+        "Q4": "right",
+        "Q5": "bottom"
+      },
+      "oracle_strips": {
+        "Q1": "BL",
+        "Q2": "BR",
+        "Q3_heuristic": "left",
+        "Q4": "right"
+      }
+    },
+    "114": {
+      "digest_chars": 1608,
+      "oracle_text": {
+        "Q1": "BR",
+        "Q2": "TR",
+        "Q3": "left",
+        "Q4": "left",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "BR",
+        "Q2": "TR",
+        "Q3_heuristic": "left",
+        "Q4": "left"
+      }
+    },
+    "121": {
+      "digest_chars": 1589,
+      "oracle_text": {
+        "Q1": "BR",
+        "Q2": "BL",
+        "Q3": "right",
+        "Q4": "right",
+        "Q5": "bottom"
+      },
+      "oracle_strips": {
+        "Q1": "BR",
+        "Q2": "BL",
+        "Q3_heuristic": "right",
+        "Q4": "right"
+      }
+    },
+    "129": {
+      "digest_chars": 1603,
+      "oracle_text": {
+        "Q1": "TL",
+        "Q2": "BR",
+        "Q3": "left",
+        "Q4": "left",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "TL",
+        "Q2": "BR",
+        "Q3_heuristic": "left",
+        "Q4": "left"
+      }
+    },
+    "137": {
+      "digest_chars": 1584,
+      "oracle_text": {
+        "Q1": "BR",
+        "Q2": "TR",
+        "Q3": "left",
+        "Q4": "right",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "BR",
+        "Q2": "TR",
+        "Q3_heuristic": "right",
+        "Q4": "right"
+      }
+    },
+    "144": {
+      "digest_chars": 1605,
+      "oracle_text": {
+        "Q1": "TR",
+        "Q2": "TL",
+        "Q3": "right",
+        "Q4": "right",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "TR",
+        "Q2": "TL",
+        "Q3_heuristic": "right",
+        "Q4": "right"
+      }
+    },
+    "152": {
+      "digest_chars": 1587,
+      "oracle_text": {
+        "Q1": "BR",
+        "Q2": "TR",
+        "Q3": "left",
+        "Q4": "left",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "BR",
+        "Q2": "TR",
+        "Q3_heuristic": "left",
+        "Q4": "left"
+      }
+    },
+    "159": {
+      "digest_chars": 1611,
+      "oracle_text": {
+        "Q1": "TL",
+        "Q2": "BR",
+        "Q3": "left",
+        "Q4": "right",
+        "Q5": "middle"
+      },
+      "oracle_strips": {
+        "Q1": "TL",
+        "Q2": "BR",
+        "Q3_heuristic": "left",
+        "Q4": "right"
+      }
+    },
+    "167": {
+      "digest_chars": 1587,
+      "oracle_text": {
+        "Q1": "BR",
+        "Q2": "TL",
+        "Q3": "right",
+        "Q4": "left",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "BR",
+        "Q2": "TL",
+        "Q3_heuristic": "right",
+        "Q4": "left"
+      }
+    },
+    "175": {
+      "digest_chars": 1588,
+      "oracle_text": {
+        "Q1": "BL",
+        "Q2": "TL",
+        "Q3": "left",
+        "Q4": "left",
+        "Q5": "bottom"
+      },
+      "oracle_strips": {
+        "Q1": "BL",
+        "Q2": "TL",
+        "Q3_heuristic": "left",
+        "Q4": "left"
+      }
+    },
+    "182": {
+      "digest_chars": 1580,
+      "oracle_text": {
+        "Q1": "BR",
+        "Q2": "TL",
+        "Q3": "right",
+        "Q4": "left",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "BR",
+        "Q2": "TL",
+        "Q3_heuristic": "right",
+        "Q4": "left"
+      }
+    },
+    "190": {
+      "digest_chars": 1588,
+      "oracle_text": {
+        "Q1": "BL",
+        "Q2": "TL",
+        "Q3": "left",
+        "Q4": "left",
+        "Q5": "bottom"
+      },
+      "oracle_strips": {
+        "Q1": "BL",
+        "Q2": "TL",
+        "Q3_heuristic": "left",
+        "Q4": "left"
+      }
+    },
+    "197": {
+      "digest_chars": 1584,
+      "oracle_text": {
+        "Q1": "BR",
+        "Q2": "TR",
+        "Q3": "left",
+        "Q4": "left",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "BR",
+        "Q2": "TR",
+        "Q3_heuristic": "left",
+        "Q4": "left"
+      }
+    },
+    "205": {
+      "digest_chars": 1589,
+      "oracle_text": {
+        "Q1": "BL",
+        "Q2": "BR",
+        "Q3": "left",
+        "Q4": "left",
+        "Q5": "bottom"
+      },
+      "oracle_strips": {
+        "Q1": "BL",
+        "Q2": "BR",
+        "Q3_heuristic": "left",
+        "Q4": "left"
+      }
+    },
+    "213": {
+      "digest_chars": 1603,
+      "oracle_text": {
+        "Q1": "TL",
+        "Q2": "BL",
+        "Q3": "left",
+        "Q4": "left",
+        "Q5": "middle"
+      },
+      "oracle_strips": {
+        "Q1": "TL",
+        "Q2": "BL",
+        "Q3_heuristic": "right",
+        "Q4": "left"
+      }
+    },
+    "220": {
+      "digest_chars": 1592,
+      "oracle_text": {
+        "Q1": "BR",
+        "Q2": "TL",
+        "Q3": "right",
+        "Q4": "left",
+        "Q5": "bottom"
+      },
+      "oracle_strips": {
+        "Q1": "BR",
+        "Q2": "TL",
+        "Q3_heuristic": "right",
+        "Q4": "left"
+      }
+    },
+    "228": {
+      "digest_chars": 1607,
+      "oracle_text": {
+        "Q1": "TR",
+        "Q2": "BL",
+        "Q3": "right",
+        "Q4": "left",
+        "Q5": "middle"
+      },
+      "oracle_strips": {
+        "Q1": "TR",
+        "Q2": "BL",
+        "Q3_heuristic": "right",
+        "Q4": "left"
+      }
+    },
+    "235": {
+      "digest_chars": 1588,
+      "oracle_text": {
+        "Q1": "BR",
+        "Q2": "TL",
+        "Q3": "left",
+        "Q4": "left",
+        "Q5": "bottom"
+      },
+      "oracle_strips": {
+        "Q1": "BR",
+        "Q2": "TL",
+        "Q3_heuristic": "right",
+        "Q4": "left"
+      }
+    },
+    "243": {
+      "digest_chars": 1611,
+      "oracle_text": {
+        "Q1": "TR",
+        "Q2": "BL",
+        "Q3": "right",
+        "Q4": "right",
+        "Q5": "middle"
+      },
+      "oracle_strips": {
+        "Q1": "TR",
+        "Q2": "BL",
+        "Q3_heuristic": "right",
+        "Q4": "right"
+      }
+    },
+    "250": {
+      "digest_chars": 1587,
+      "oracle_text": {
+        "Q1": "BL",
+        "Q2": "TL",
+        "Q3": "left",
+        "Q4": "left",
+        "Q5": "bottom"
+      },
+      "oracle_strips": {
+        "Q1": "BL",
+        "Q2": "TL",
+        "Q3_heuristic": "left",
+        "Q4": "left"
+      }
+    },
+    "258": {
+      "digest_chars": 1611,
+      "oracle_text": {
+        "Q1": "TL",
+        "Q2": "BL",
+        "Q3": "right",
+        "Q4": "left",
+        "Q5": "middle"
+      },
+      "oracle_strips": {
+        "Q1": "TL",
+        "Q2": "BL",
+        "Q3_heuristic": "left",
+        "Q4": "left"
+      }
+    },
+    "266": {
+      "digest_chars": 1587,
+      "oracle_text": {
+        "Q1": "BR",
+        "Q2": "TR",
+        "Q3": "right",
+        "Q4": "right",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "BR",
+        "Q2": "TR",
+        "Q3_heuristic": "left",
+        "Q4": "right"
+      }
+    },
+    "273": {
+      "digest_chars": 1606,
+      "oracle_text": {
+        "Q1": "TL",
+        "Q2": "BR",
+        "Q3": "left",
+        "Q4": "right",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "TL",
+        "Q2": "BR",
+        "Q3_heuristic": "left",
+        "Q4": "right"
+      }
+    },
+    "281": {
+      "digest_chars": 1583,
+      "oracle_text": {
+        "Q1": "BR",
+        "Q2": "TR",
+        "Q3": "left",
+        "Q4": "right",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "BR",
+        "Q2": "TR",
+        "Q3_heuristic": "left",
+        "Q4": "right"
+      }
+    },
+    "288": {
+      "digest_chars": 1598,
+      "oracle_text": {
+        "Q1": "TR",
+        "Q2": "BL",
+        "Q3": "right",
+        "Q4": "right",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "TR",
+        "Q2": "BL",
+        "Q3_heuristic": "right",
+        "Q4": "right"
+      }
+    },
+    "296": {
+      "digest_chars": 1582,
+      "oracle_text": {
+        "Q1": "BR",
+        "Q2": "TR",
+        "Q3": "left",
+        "Q4": "left",
+        "Q5": "top"
+      },
+      "oracle_strips": {
+        "Q1": "BR",
+        "Q2": "TR",
+        "Q3_heuristic": "left",
+        "Q4": "left"
+      }
+    }
+  }
+}

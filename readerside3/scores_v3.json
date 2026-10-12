@@ -1,0 +1,732 @@
+{
+  "stats": {
+    "minimax": {
+      "digest": {
+        "overall": 0.85,
+        "n": 200,
+        "unparsed": 30,
+        "parsed_only": 1.0,
+        "per_question": {
+          "Q1": {
+            "acc": 0.85,
+            "n": 40,
+            "unparsed": 6,
+            "parsed_only": 1.0,
+            "parsed_n": 34
+          },
+          "Q2": {
+            "acc": 0.85,
+            "n": 40,
+            "unparsed": 6,
+            "parsed_only": 1.0,
+            "parsed_n": 34
+          },
+          "Q3": {
+            "acc": 0.85,
+            "n": 40,
+            "unparsed": 6,
+            "parsed_only": 1.0,
+            "parsed_n": 34
+          },
+          "Q4": {
+            "acc": 0.85,
+            "n": 40,
+            "unparsed": 6,
+            "parsed_only": 1.0,
+            "parsed_n": 34
+          },
+          "Q5": {
+            "acc": 0.85,
+            "n": 40,
+            "unparsed": 6,
+            "parsed_only": 1.0,
+            "parsed_n": 34
+          }
+        }
+      },
+      "learned_cal": {
+        "overall": 0.37,
+        "n": 200,
+        "unparsed": 5,
+        "parsed_only": 0.37948717948717947,
+        "per_question": {
+          "Q1": {
+            "acc": 0.275,
+            "n": 40,
+            "unparsed": 1,
+            "parsed_only": 0.28205128205128205,
+            "parsed_n": 39
+          },
+          "Q2": {
+            "acc": 0.25,
+            "n": 40,
+            "unparsed": 1,
+            "parsed_only": 0.2564102564102564,
+            "parsed_n": 39
+          },
+          "Q3": {
+            "acc": 0.375,
+            "n": 40,
+            "unparsed": 1,
+            "parsed_only": 0.38461538461538464,
+            "parsed_n": 39
+          },
+          "Q4": {
+            "acc": 0.5,
+            "n": 40,
+            "unparsed": 1,
+            "parsed_only": 0.5128205128205128,
+            "parsed_n": 39
+          },
+          "Q5": {
+            "acc": 0.45,
+            "n": 40,
+            "unparsed": 1,
+            "parsed_only": 0.46153846153846156,
+            "parsed_n": 39
+          }
+        }
+      },
+      "blind_v1": {
+        "overall": 0.31,
+        "n": 200,
+        "unparsed": 17,
+        "parsed_only": 0.33879781420765026,
+        "per_question": {
+          "Q1": {
+            "acc": 0.15,
+            "n": 40,
+            "unparsed": 4,
+            "parsed_only": 0.16666666666666666,
+            "parsed_n": 36
+          },
+          "Q2": {
+            "acc": 0.225,
+            "n": 40,
+            "unparsed": 4,
+            "parsed_only": 0.25,
+            "parsed_n": 36
+          },
+          "Q3": {
+            "acc": 0.4,
+            "n": 40,
+            "unparsed": 3,
+            "parsed_only": 0.43243243243243246,
+            "parsed_n": 37
+          },
+          "Q4": {
+            "acc": 0.55,
+            "n": 40,
+            "unparsed": 3,
+            "parsed_only": 0.5945945945945946,
+            "parsed_n": 37
+          },
+          "Q5": {
+            "acc": 0.225,
+            "n": 40,
+            "unparsed": 3,
+            "parsed_only": 0.24324324324324326,
+            "parsed_n": 37
+          }
+        }
+      },
+      "digest_minus_cal": 0.48,
+      "digest_minus_ceiling": 0.375,
+      "cal_v2_reference": 0.345
+    },
+    "glm": {
+      "digest": {
+        "overall": 1.0,
+        "n": 200,
+        "unparsed": 0,
+        "parsed_only": 1.0,
+        "per_question": {
+          "Q1": {
+            "acc": 1.0,
+            "n": 40,
+            "unparsed": 0,
+            "parsed_only": 1.0,
+            "parsed_n": 40
+          },
+          "Q2": {
+            "acc": 1.0,
+            "n": 40,
+            "unparsed": 0,
+            "parsed_only": 1.0,
+            "parsed_n": 40
+          },
+          "Q3": {
+            "acc": 1.0,
+            "n": 40,
+            "unparsed": 0,
+            "parsed_only": 1.0,
+            "parsed_n": 40
+          },
+          "Q4": {
+            "acc": 1.0,
+            "n": 40,
+            "unparsed": 0,
+            "parsed_only": 1.0,
+            "parsed_n": 40
+          },
+          "Q5": {
+            "acc": 1.0,
+            "n": 40,
+            "unparsed": 0,
+            "parsed_only": 1.0,
+            "parsed_n": 40
+          }
+        }
+      },
+      "learned_cal": {
+        "overall": 0.4,
+        "n": 200,
+        "unparsed": 14,
+        "parsed_only": 0.43010752688172044,
+        "per_question": {
+          "Q1": {
+            "acc": 0.35,
+            "n": 40,
+            "unparsed": 0,
+            "parsed_only": 0.35,
+            "parsed_n": 40
+          },
+          "Q2": {
+            "acc": 0.325,
+            "n": 40,
+            "unparsed": 2,
+            "parsed_only": 0.34210526315789475,
+            "parsed_n": 38
+          },
+          "Q3": {
+            "acc": 0.525,
+            "n": 40,
+            "unparsed": 4,
+            "parsed_only": 0.5833333333333334,
+            "parsed_n": 36
+          },
+          "Q4": {
+            "acc": 0.425,
+            "n": 40,
+            "unparsed": 4,
+            "parsed_only": 0.4722222222222222,
+            "parsed_n": 36
+          },
+          "Q5": {
+            "acc": 0.375,
+            "n": 40,
+            "unparsed": 4,
+            "parsed_only": 0.4166666666666667,
+            "parsed_n": 36
+          }
+        }
+      },
+      "blind_v1": {
+        "overall": 0.28,
+        "n": 200,
+        "unparsed": 60,
+        "parsed_only": 0.4,
+        "per_question": {
+          "Q1": {
+            "acc": 0.3,
+            "n": 40,
+            "unparsed": 12,
+            "parsed_only": 0.42857142857142855,
+            "parsed_n": 28
+          },
+          "Q2": {
+            "acc": 0.275,
+            "n": 40,
+            "unparsed": 12,
+            "parsed_only": 0.39285714285714285,
+            "parsed_n": 28
+          },
+          "Q3": {
+            "acc": 0.35,
+            "n": 40,
+            "unparsed": 12,
+            "parsed_only": 0.5,
+            "parsed_n": 28
+          },
+          "Q4": {
+            "acc": 0.25,
+            "n": 40,
+            "unparsed": 12,
+            "parsed_only": 0.35714285714285715,
+            "parsed_n": 28
+          },
+          "Q5": {
+            "acc": 0.225,
+            "n": 40,
+            "unparsed": 12,
+            "parsed_only": 0.32142857142857145,
+            "parsed_n": 28
+          }
+        }
+      },
+      "digest_minus_cal": 0.6,
+      "digest_minus_ceiling": 0.525,
+      "cal_v2_reference": 0.38
+    }
+  },
+  "clear_subset": {
+    "minimax": {
+      "digest": {
+        "overall": 0.8412698412698413,
+        "per_question": {
+          "Q1": {
+            "acc": 0.8666666666666667,
+            "n": 15
+          },
+          "Q2": {
+            "acc": 0.8333333333333334,
+            "n": 18
+          },
+          "Q3": {
+            "acc": 0.7647058823529411,
+            "n": 17
+          },
+          "Q4": {
+            "acc": 0.85,
+            "n": 40
+          },
+          "Q5": {
+            "acc": 0.8611111111111112,
+            "n": 36
+          }
+        }
+      },
+      "learned_cal": {
+        "overall": 0.3968253968253968,
+        "per_question": {
+          "Q1": {
+            "acc": 0.3333333333333333,
+            "n": 15
+          },
+          "Q2": {
+            "acc": 0.2777777777777778,
+            "n": 18
+          },
+          "Q3": {
+            "acc": 0.29411764705882354,
+            "n": 17
+          },
+          "Q4": {
+            "acc": 0.5,
+            "n": 40
+          },
+          "Q5": {
+            "acc": 0.4166666666666667,
+            "n": 36
+          }
+        }
+      }
+    },
+    "glm": {
+      "digest": {
+        "overall": 1.0,
+        "per_question": {
+          "Q1": {
+            "acc": 1.0,
+            "n": 15
+          },
+          "Q2": {
+            "acc": 1.0,
+            "n": 18
+          },
+          "Q3": {
+            "acc": 1.0,
+            "n": 17
+          },
+          "Q4": {
+            "acc": 1.0,
+            "n": 40
+          },
+          "Q5": {
+            "acc": 1.0,
+            "n": 36
+          }
+        }
+      },
+      "learned_cal": {
+        "overall": 0.3412698412698413,
+        "per_question": {
+          "Q1": {
+            "acc": 0.3333333333333333,
+            "n": 15
+          },
+          "Q2": {
+            "acc": 0.05555555555555555,
+            "n": 18
+          },
+          "Q3": {
+            "acc": 0.4117647058823529,
+            "n": 17
+          },
+          "Q4": {
+            "acc": 0.425,
+            "n": 40
+          },
+          "Q5": {
+            "acc": 0.3611111111111111,
+            "n": 36
+          }
+        }
+      }
+    }
+  },
+  "paired_digest_vs_cal": {
+    "minimax": {
+      "overall": {
+        "digest_only": 103,
+        "learned_cal_only": 7,
+        "both": 67,
+        "neither": 23
+      },
+      "per_question": {
+        "Q1": {
+          "digest_only": 23,
+          "learned_cal_only": 0,
+          "both": 11,
+          "neither": 6
+        },
+        "Q2": {
+          "digest_only": 25,
+          "learned_cal_only": 1,
+          "both": 9,
+          "neither": 5
+        },
+        "Q3": {
+          "digest_only": 20,
+          "learned_cal_only": 1,
+          "both": 14,
+          "neither": 5
+        },
+        "Q4": {
+          "digest_only": 17,
+          "learned_cal_only": 3,
+          "both": 17,
+          "neither": 3
+        },
+        "Q5": {
+          "digest_only": 18,
+          "learned_cal_only": 2,
+          "both": 16,
+          "neither": 4
+        }
+      }
+    },
+    "glm": {
+      "overall": {
+        "digest_only": 120,
+        "learned_cal_only": 0,
+        "both": 80,
+        "neither": 0
+      },
+      "per_question": {
+        "Q1": {
+          "digest_only": 26,
+          "learned_cal_only": 0,
+          "both": 14,
+          "neither": 0
+        },
+        "Q2": {
+          "digest_only": 27,
+          "learned_cal_only": 0,
+          "both": 13,
+          "neither": 0
+        },
+        "Q3": {
+          "digest_only": 19,
+          "learned_cal_only": 0,
+          "both": 21,
+          "neither": 0
+        },
+        "Q4": {
+          "digest_only": 23,
+          "learned_cal_only": 0,
+          "both": 17,
+          "neither": 0
+        },
+        "Q5": {
+          "digest_only": 25,
+          "learned_cal_only": 0,
+          "both": 15,
+          "neither": 0
+        }
+      }
+    }
+  },
+  "constant_baselines": {
+    "Q1": {
+      "answer": "BR",
+      "accuracy": 0.425,
+      "distribution": {
+        "TL": 7,
+        "BL": 7,
+        "BR": 17,
+        "TR": 9
+      }
+    },
+    "Q2": {
+      "answer": "TL",
+      "accuracy": 0.375,
+      "distribution": {
+        "BL": 11,
+        "TL": 15,
+        "TR": 9,
+        "BR": 5
+      }
+    },
+    "Q3": {
+      "answer": "right",
+      "accuracy": 0.525,
+      "distribution": {
+        "left": 19,
+        "right": 21
+      }
+    },
+    "Q4": {
+      "answer": "right",
+      "accuracy": 0.55,
+      "distribution": {
+        "right": 22,
+        "left": 18
+      }
+    },
+    "Q5": {
+      "answer": "top",
+      "accuracy": 0.5,
+      "distribution": {
+        "middle": 9,
+        "top": 20,
+        "bottom": 11
+      }
+    }
+  },
+  "constant_composite": 0.475,
+  "prompt_sizes": {
+    "digest": {
+      "n": 80,
+      "mean_prompt_chars": 6924.3,
+      "min_prompt_chars": 6906,
+      "max_prompt_chars": 6943
+    },
+    "learned_cal": {
+      "n": 80,
+      "mean_prompt_chars": 16549.0,
+      "min_prompt_chars": 16549,
+      "max_prompt_chars": 16549
+    }
+  },
+  "latencies": {
+    "minimax": {
+      "digest": {
+        "mean_s": 16.891,
+        "max_s": 23.55
+      },
+      "learned_cal": {
+        "mean_s": 33.1255,
+        "max_s": 80.2
+      }
+    },
+    "glm": {
+      "digest": {
+        "mean_s": 13.184000000000001,
+        "max_s": 27.04
+      },
+      "learned_cal": {
+        "mean_s": 49.40525,
+        "max_s": 138.31
+      }
+    }
+  },
+  "count_vs_mass_disagreement": {
+    "Q4": {
+      "frames": [
+        0,
+        23,
+        197
+      ],
+      "digest_correct": {
+        "minimax": 2,
+        "glm": 3
+      },
+      "cal_correct": {
+        "minimax": 2,
+        "glm": 1
+      }
+    },
+    "Q5": {
+      "frames": [
+        15,
+        83
+      ],
+      "digest_correct": {
+        "minimax": 2,
+        "glm": 2
+      },
+      "cal_correct": {
+        "minimax": 2,
+        "glm": 1
+      }
+    }
+  },
+  "frame83": {
+    "minimax": {
+      "digest": {
+        "parsed": {
+          "Q1": "TR",
+          "Q2": "TL",
+          "Q3": "right",
+          "Q4": "left",
+          "Q5": "middle"
+        },
+        "correct": {
+          "Q1": true,
+          "Q2": true,
+          "Q3": true,
+          "Q4": true,
+          "Q5": true
+        },
+        "raw_excerpt": "To answer the questions based on the provided frame digest, we will follow the instructions and compare the relevant values step by step.\n\n### Q1: Brightest Quadrant\n**Work Q1:**  \n- Quadrant sums:  \n  - TL = 2352678  \n  - TR = 3438422  \n  - BL = 2941908  \n  - BR = 2920081  \n\nThe largest sum is TR = 3438422.\n\n**Answer Q1:** TR\n\n---\n\n### Q2: Darkest Quadrant\n**Work Q2:**  \n- Quadrant sums:  \n  - TL = 2352678  \n  - TR = 3438422  \n  - BL = 2941908  \n  - BR = 2920081  \n\nThe smallest sum is TL = 2352678.\n\n**Answer Q2:** TL\n\n---\n\n### Q3: Brightness Centroid Side\n**Work Q3:**  \n- Brightness centroid x = 76.82 cells  \n- Centre line x = 74.00 cells  \n\nSince 76.82 > 74.00, the centroid lies on the right side.\n\n**Answer Q3:** right\n\n---\n\n### Q4: Edge Side\n**Work Q4:**  \n- Edge counts by half:  \n  - Left = 1417  \n  - Right = 486  \n\nThe larger count is on the left side (1417 > 486).\n\n**Answer Q4:** left\n\n---\n\n### Q5: Edge Band\n**Work Q5:**  \n- Edge counts by band:  \n  - Top (rows 1-27) = 794  \n  - Middle (rows 28-54) = 1109  \n  - Bottom (rows 55-80) = 0  \n\nThe largest count is in the middle band (1109).\n\n**Answer Q5:** middle\n\n---\n\n### Final Answers:\nQ1: TR  \nQ2: TL  \nQ3: right  \nQ4: left  \nQ5:"
+      },
+      "learned_cal": {
+        "parsed": {
+          "Q1": "BR",
+          "Q2": "TL",
+          "Q3": "right",
+          "Q4": "right",
+          "Q5": "middle"
+        },
+        "correct": {
+          "Q1": false,
+          "Q2": true,
+          "Q3": true,
+          "Q4": false,
+          "Q5": true
+        },
+        "raw_excerpt": "To solve the questions about the frame, we need to analyze the brightness and edge activity in different regions of the frame as described. Here's a step-by-step breakdown of the process:\n\n### Q1: Brightest Quadrant\n\n**Work Q1:**\n1. **Rows 1-10:**\n   - Left half (1-74): Sum the brightness values.\n   - Right half (75-148): Sum the brightness values.\n2. **Rows 11-20:**\n   - Left half (1-74): Sum the brightness values.\n   - Right half (75-148): Sum the brightness values.\n3. **Rows 21-30:**\n   - Left half (1-74): Sum the brightness values.\n   - Right half (75-148): Sum the brightness values.\n4. **Rows 31-40:**\n   - Left half (1-74): Sum the brightness values.\n   - Right half (75-148): Sum the brightness values.\n5. **Rows 41-50:**\n   - Left half (1-74): Sum the brightness values.\n   - Right half (75-148): Sum the brightness values.\n6. **Rows 51-60:**\n   - Left half (1-74): Sum the brightness values.\n   - Right half (75-148): Sum the brightness values.\n7. **Rows 61-70:**\n   - Left half (1-74): Sum the brightness values.\n   - Right half (75-148): Sum the brightness values.\n8. **Rows 71-80:**\n   - Left half (1-74): Sum the brightness values.\n   - Right half (75-148): Sum the brightness val"
+      }
+    },
+    "glm": {
+      "digest": {
+        "parsed": {
+          "Q1": "TR",
+          "Q2": "TL",
+          "Q3": "right",
+          "Q4": "left",
+          "Q5": "middle"
+        },
+        "correct": {
+          "Q1": true,
+          "Q2": true,
+          "Q3": true,
+          "Q4": true,
+          "Q5": true
+        },
+        "raw_excerpt": "Work Q1: The quadrant sums are TL=2352678, TR=3438422, BL=2941908, BR=2920081. Comparing these, TR has the largest sum (3438422).\nQ1: TR\n\nWork Q2: The quadrant sums are TL=2352678, TR=3438422, BL=2941908, BR=2920081. Comparing these, TL has the smallest sum (2352678).\nQ2: TL\n\nWork Q3: The brightness centroid x value is 76.82 cells. The vertical centre line is at x=74.00. Since 76.82 is greater than 74.00, the centroid lies on the right.\nQ3: right\n\nWork Q4: The edge counts by half are left=1417 and right=486. Comparing these, the left half has a larger count (1417).\nQ4: left\n\nWork Q5: The edge counts by band are top=794, middle=1109, and bottom=0. Comparing these, the middle band has the largest count (1109).\nQ5: middle"
+      },
+      "learned_cal": {
+        "parsed": {
+          "Q1": "TR",
+          "Q2": "BL",
+          "Q3": "right",
+          "Q4": "right",
+          "Q5": "middle"
+        },
+        "correct": {
+          "Q1": true,
+          "Q2": false,
+          "Q3": true,
+          "Q4": false,
+          "Q5": true
+        },
+        "raw_excerpt": "Work Q1:\nTL (rows 1-10): (8*10) + (7*64) = 80 + 448 = 528\nTL (rows 11-20): (8*74) + (7*10) + (6*16) = 592 + 70 + 96 = 758\nTL (rows 21-30): (9*74) = 666\nTL (rows 31-40): (9*74) = 666\nTotal TL: 528 + 758 + 666 + 666 = 2618\n\nTR (rows 1-10): (9*74) = 666\nTR (rows 11-20): (9*74) = 666\nTR (rows 21-30): (9*74) = 666\nTR (rows 31-40): (9*74) = 666\nTotal TR: 666 + 666 + 666 + 666 = 2664\n\nBL (rows 41-50): (9*74) = 666\nBL (rows 51-60): (9*74) = 666\nBL (rows 71-80): (8*74) = 592\nTotal BL: 666 + 666 + 592 = 1924\n\nBR (rows 41-50): (9*74) = 666\nBR (rows 51-60): (9*74) = 666\nBR (rows 71-80): (8*74) = 592\nTotal BR: 666 + 666 + 592 = 1924\n\nQ1: TR\n\nWork Q2:\nUsing the quadrant totals from Q1:\nTL: 2618\nTR: 2664\nBL: 1924\nBR: 1924\n\nQ2: BL\n\nWork Q3:\nLeft half total: 2618 (TL) + 1924 (BL) = 4542\nRight half total: 2664 (TR) + 1924 (BR) = 4588\nThe right half has a larger total brightness (4588 > 4542). The difference is small, but since the right half's total is greater, its centroid will be further to the right, placing the overall centroid on the right side.\n\nQ3: right\n\nWork Q4:\nLeft half edge count: 5 + 4 + 8 + 11 + 9 + 9 + 11 + 8 = 65\nRight half edge count: 5 + 4 + 8 + 11 + 9 + 9 + 11 + 8 = 65\nThe edge co"
+      }
+    },
+    "truth": {
+      "Q1": "TR",
+      "Q2": "TL",
+      "Q3": "right",
+      "Q4": "left",
+      "Q5": "middle"
+    },
+    "computation": {
+      "quadrant_y_sums": {
+        "TL": 2352678,
+        "TR": 3438422,
+        "BL": 2941908,
+        "BR": 2920081
+      },
+      "q1_margin_frac": 0.0426,
+      "q2_margin_frac": 0.0487,
+      "centroid_x_px": 153.65,
+      "centroid_x_cells": 76.82,
+      "q3_margin_cells": 2.82,
+      "edge_counts_half": {
+        "left": 1417,
+        "right": 486
+      },
+      "edge_mass_half": {
+        "left": 1352810,
+        "right": 922506
+      },
+      "q4_count_vs_mass_agree": true,
+      "edge_counts_band": {
+        "top": 794,
+        "middle": 1109,
+        "bottom": 0
+      },
+      "edge_mass_band": {
+        "top": 1028876,
+        "middle": 1009470,
+        "bottom": 236970
+      },
+      "q5_count_vs_mass_agree": false,
+      "q5_margin_frac": 0.284,
+      "edge_threshold": 200
+    }
+  },
+  "oracle": {
+    "A_digest_equals_frozen_computation": true,
+    "B_strip_consistency": true,
+    "C_oracle_from_digest_text": {
+      "Q1": 40,
+      "Q2": 40,
+      "Q3": 40,
+      "Q4": 40,
+      "Q5": 40
+    },
+    "C_oracle_total": "200/200",
+    "strips_oracle": {
+      "Q1": 40,
+      "Q2": 40,
+      "Q4": 40
+    },
+    "q3_half_total_heuristic": "35/40"
+  },
+  "digest_chars": {
+    "min": 1574,
+    "mean": 1592.3,
+    "max": 1611
+  },
+  "v2_cal_reference": {
+    "minimax": 0.345,
+    "glm": 0.38
+  },
+  "v1_reference": {
+    "minimax": {
+      "fixed": 0.315,
+      "learned": 0.43,
+      "blind": 0.31
+    },
+    "glm": {
+      "fixed": 0.35,
+      "learned": 0.325,
+      "blind": 0.28
+    }
+  },
+  "n_failed_attempts": 0,
+  "missing": []
+}

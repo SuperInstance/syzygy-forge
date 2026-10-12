@@ -1,0 +1,208 @@
+{
+  "sample_rule": "40 frames, np.linspace(0, 296, 40) rounded, sorted unique",
+  "frames": [
+    0,
+    8,
+    15,
+    23,
+    30,
+    38,
+    46,
+    53,
+    61,
+    68,
+    76,
+    83,
+    91,
+    99,
+    106,
+    114,
+    121,
+    129,
+    137,
+    144,
+    152,
+    159,
+    167,
+    175,
+    182,
+    190,
+    197,
+    205,
+    213,
+    220,
+    228,
+    235,
+    243,
+    250,
+    258,
+    266,
+    273,
+    281,
+    288,
+    296
+  ],
+  "per_frame": [
+    {
+      "frame": 0,
+      "cells_changed_fixed_vs_learned": 9321
+    },
+    {
+      "frame": 8,
+      "cells_changed_fixed_vs_learned": 8769
+    },
+    {
+      "frame": 15,
+      "cells_changed_fixed_vs_learned": 9162
+    },
+    {
+      "frame": 23,
+      "cells_changed_fixed_vs_learned": 9000
+    },
+    {
+      "frame": 30,
+      "cells_changed_fixed_vs_learned": 7603
+    },
+    {
+      "frame": 38,
+      "cells_changed_fixed_vs_learned": 8201
+    },
+    {
+      "frame": 46,
+      "cells_changed_fixed_vs_learned": 8976
+    },
+    {
+      "frame": 53,
+      "cells_changed_fixed_vs_learned": 7215
+    },
+    {
+      "frame": 61,
+      "cells_changed_fixed_vs_learned": 7917
+    },
+    {
+      "frame": 68,
+      "cells_changed_fixed_vs_learned": 8303
+    },
+    {
+      "frame": 76,
+      "cells_changed_fixed_vs_learned": 10011
+    },
+    {
+      "frame": 83,
+      "cells_changed_fixed_vs_learned": 10098
+    },
+    {
+      "frame": 91,
+      "cells_changed_fixed_vs_learned": 9823
+    },
+    {
+      "frame": 99,
+      "cells_changed_fixed_vs_learned": 9346
+    },
+    {
+      "frame": 106,
+      "cells_changed_fixed_vs_learned": 8593
+    },
+    {
+      "frame": 114,
+      "cells_changed_fixed_vs_learned": 9365
+    },
+    {
+      "frame": 121,
+      "cells_changed_fixed_vs_learned": 9223
+    },
+    {
+      "frame": 129,
+      "cells_changed_fixed_vs_learned": 9210
+    },
+    {
+      "frame": 137,
+      "cells_changed_fixed_vs_learned": 9712
+    },
+    {
+      "frame": 144,
+      "cells_changed_fixed_vs_learned": 9958
+    },
+    {
+      "frame": 152,
+      "cells_changed_fixed_vs_learned": 9076
+    },
+    {
+      "frame": 159,
+      "cells_changed_fixed_vs_learned": 9419
+    },
+    {
+      "frame": 167,
+      "cells_changed_fixed_vs_learned": 8338
+    },
+    {
+      "frame": 175,
+      "cells_changed_fixed_vs_learned": 9037
+    },
+    {
+      "frame": 182,
+      "cells_changed_fixed_vs_learned": 9127
+    },
+    {
+      "frame": 190,
+      "cells_changed_fixed_vs_learned": 8909
+    },
+    {
+      "frame": 197,
+      "cells_changed_fixed_vs_learned": 8410
+    },
+    {
+      "frame": 205,
+      "cells_changed_fixed_vs_learned": 9355
+    },
+    {
+      "frame": 213,
+      "cells_changed_fixed_vs_learned": 7736
+    },
+    {
+      "frame": 220,
+      "cells_changed_fixed_vs_learned": 8303
+    },
+    {
+      "frame": 228,
+      "cells_changed_fixed_vs_learned": 7465
+    },
+    {
+      "frame": 235,
+      "cells_changed_fixed_vs_learned": 8529
+    },
+    {
+      "frame": 243,
+      "cells_changed_fixed_vs_learned": 8408
+    },
+    {
+      "frame": 250,
+      "cells_changed_fixed_vs_learned": 7901
+    },
+    {
+      "frame": 258,
+      "cells_changed_fixed_vs_learned": 8525
+    },
+    {
+      "frame": 266,
+      "cells_changed_fixed_vs_learned": 9339
+    },
+    {
+      "frame": 273,
+      "cells_changed_fixed_vs_learned": 9534
+    },
+    {
+      "frame": 281,
+      "cells_changed_fixed_vs_learned": 8934
+    },
+    {
+      "frame": 288,
+      "cells_changed_fixed_vs_learned": 9221
+    },
+    {
+      "frame": 296,
+      "cells_changed_fixed_vs_learned": 9496
+    }
+  ],
+  "shipped_vs_corpus_tone_mismatches_on_sample": 0
+}

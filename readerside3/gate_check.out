@@ -1,0 +1,15 @@
+frozen function norm_quad: IDENTICAL
+frozen function norm_side: IDENTICAL
+frozen function norm_band: IDENTICAL
+frozen function parse_answers: IDENTICAL
+frozen function call_reader: IDENTICAL
+frozen function build_prompt: IDENTICAL
+frozen constant QUESTIONS: IDENTICAL
+frozen constant ANSWER_TAIL: IDENTICAL
+frozen constant GUIDE: IDENTICAL
+frozen constant READERS: IDENTICAL
+learned_cal prompt reproduction vs v2: 40/40 byte-identical
+digest prompt hygiene: PASS all 40
+sample prompt sizes (frame 0): {'grid_prompt_chars': 16549, 'digest_prompt_chars': 6933}
+
+ALL GATES PASS
