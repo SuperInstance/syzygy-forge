@@ -1,0 +1,672 @@
+{
+  "profile": "micro",
+  "n": 16,
+  "k": 8,
+  "feature_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "rows": [
+    [
+      162,
+      155,
+      167,
+      162,
+      162,
+      162,
+      162,
+      163
+    ],
+    [
+      123,
+      70,
+      169,
+      101,
+      146,
+      118,
+      129,
+      100
+    ],
+    [
+      120,
+      66,
+      164,
+      143,
+      96,
+      124,
+      115,
+      147
+    ],
+    [
+      120,
+      110,
+      128,
+      120,
+      120,
+      120,
+      120,
+      122
+    ],
+    [
+      181,
+      173,
+      187,
+      181,
+      181,
+      181,
+      181,
+      183
+    ],
+    [
+      207,
+      200,
+      213,
+      207,
+      207,
+      207,
+      207,
+      208
+    ],
+    [
+      77,
+      31,
+      134,
+      53,
+      102,
+      72,
+      82,
+      46
+    ],
+    [
+      98,
+      64,
+      129,
+      99,
+      97,
+      98,
+      98,
+      99
+    ],
+    [
+      77,
+      31,
+      128,
+      101,
+      53,
+      81,
+      73,
+      98
+    ],
+    [
+      153,
+      107,
+      183,
+      155,
+      151,
+      155,
+      151,
+      166
+    ],
+    [
+      139,
+      130,
+      147,
+      139,
+      139,
+      139,
+      140,
+      141
+    ],
+    [
+      63,
+      49,
+      78,
+      64,
+      62,
+      63,
+      63,
+      63
+    ],
+    [
+      42,
+      29,
+      59,
+      42,
+      42,
+      42,
+      42,
+      40
+    ],
+    [
+      102,
+      94,
+      110,
+      102,
+      102,
+      102,
+      102,
+      105
+    ],
+    [
+      18,
+      13,
+      24,
+      18,
+      18,
+      18,
+      18,
+      17
+    ],
+    [
+      82,
+      71,
+      93,
+      82,
+      82,
+      82,
+      82,
+      84
+    ]
+  ],
+  "assignment_rule": "nearest centroid; equivalently dot-product argmax of inference_rows with inference_bias (exact identity)",
+  "inference_rows": [
+    [
+      324,
+      310,
+      334,
+      324,
+      324,
+      324,
+      324,
+      326
+    ],
+    [
+      246,
+      140,
+      338,
+      202,
+      292,
+      236,
+      258,
+      200
+    ],
+    [
+      240,
+      132,
+      328,
+      286,
+      192,
+      248,
+      230,
+      294
+    ],
+    [
+      240,
+      220,
+      256,
+      240,
+      240,
+      240,
+      240,
+      244
+    ],
+    [
+      362,
+      346,
+      374,
+      362,
+      362,
+      362,
+      362,
+      366
+    ],
+    [
+      414,
+      400,
+      426,
+      414,
+      414,
+      414,
+      414,
+      416
+    ],
+    [
+      154,
+      62,
+      268,
+      106,
+      204,
+      144,
+      164,
+      92
+    ],
+    [
+      196,
+      128,
+      258,
+      198,
+      194,
+      196,
+      196,
+      198
+    ],
+    [
+      154,
+      62,
+      256,
+      202,
+      106,
+      162,
+      146,
+      196
+    ],
+    [
+      306,
+      214,
+      366,
+      310,
+      302,
+      310,
+      302,
+      332
+    ],
+    [
+      278,
+      260,
+      294,
+      278,
+      278,
+      278,
+      280,
+      282
+    ],
+    [
+      126,
+      98,
+      156,
+      128,
+      124,
+      126,
+      126,
+      126
+    ],
+    [
+      84,
+      58,
+      118,
+      84,
+      84,
+      84,
+      84,
+      80
+    ],
+    [
+      204,
+      188,
+      220,
+      204,
+      204,
+      204,
+      204,
+      210
+    ],
+    [
+      36,
+      26,
+      48,
+      36,
+      36,
+      36,
+      36,
+      34
+    ],
+    [
+      164,
+      142,
+      186,
+      164,
+      164,
+      164,
+      164,
+      168
+    ]
+  ],
+  "inference_bias": [
+    -209703,
+    -120672,
+    -125527,
+    -115368,
+    -262192,
+    -342878,
+    -52083,
+    -78560,
+    -57778,
+    -189555,
+    -155274,
+    -32301,
+    -14742,
+    -83981,
+    -2654,
+    -54366
+  ],
+  "training": {
+    "seed": 20261011,
+    "subsample_cells": 200000,
+    "iterations_run": 41,
+    "converged": true,
+    "iteration_log": [
+      {
+        "iter": 0,
+        "rows_changed": 16,
+        "dead": 0,
+        "min_count": 1854,
+        "max_count": 35941
+      },
+      {
+        "iter": 1,
+        "rows_changed": 16,
+        "dead": 0,
+        "min_count": 3675,
+        "max_count": 34284
+      },
+      {
+        "iter": 2,
+        "rows_changed": 16,
+        "dead": 0,
+        "min_count": 3428,
+        "max_count": 32446
+      },
+      {
+        "iter": 3,
+        "rows_changed": 16,
+        "dead": 0,
+        "min_count": 3295,
+        "max_count": 31075
+      },
+      {
+        "iter": 4,
+        "rows_changed": 16,
+        "dead": 0,
+        "min_count": 3335,
+        "max_count": 30038
+      },
+      {
+        "iter": 5,
+        "rows_changed": 16,
+        "dead": 0,
+        "min_count": 3477,
+        "max_count": 29293
+      },
+      {
+        "iter": 6,
+        "rows_changed": 16,
+        "dead": 0,
+        "min_count": 3615,
+        "max_count": 28625
+      },
+      {
+        "iter": 7,
+        "rows_changed": 14,
+        "dead": 0,
+        "min_count": 3558,
+        "max_count": 27754
+      },
+      {
+        "iter": 8,
+        "rows_changed": 15,
+        "dead": 0,
+        "min_count": 3597,
+        "max_count": 27132
+      },
+      {
+        "iter": 9,
+        "rows_changed": 15,
+        "dead": 0,
+        "min_count": 3693,
+        "max_count": 26483
+      },
+      {
+        "iter": 10,
+        "rows_changed": 15,
+        "dead": 0,
+        "min_count": 3760,
+        "max_count": 25826
+      },
+      {
+        "iter": 11,
+        "rows_changed": 13,
+        "dead": 0,
+        "min_count": 3777,
+        "max_count": 25114
+      },
+      {
+        "iter": 12,
+        "rows_changed": 13,
+        "dead": 0,
+        "min_count": 3777,
+        "max_count": 24692
+      },
+      {
+        "iter": 13,
+        "rows_changed": 14,
+        "dead": 0,
+        "min_count": 3741,
+        "max_count": 24234
+      },
+      {
+        "iter": 14,
+        "rows_changed": 14,
+        "dead": 0,
+        "min_count": 3732,
+        "max_count": 23796
+      },
+      {
+        "iter": 15,
+        "rows_changed": 10,
+        "dead": 0,
+        "min_count": 3734,
+        "max_count": 23298
+      },
+      {
+        "iter": 16,
+        "rows_changed": 11,
+        "dead": 0,
+        "min_count": 3726,
+        "max_count": 22944
+      },
+      {
+        "iter": 17,
+        "rows_changed": 12,
+        "dead": 0,
+        "min_count": 3688,
+        "max_count": 22366
+      },
+      {
+        "iter": 18,
+        "rows_changed": 10,
+        "dead": 0,
+        "min_count": 3711,
+        "max_count": 22171
+      },
+      {
+        "iter": 19,
+        "rows_changed": 9,
+        "dead": 0,
+        "min_count": 3733,
+        "max_count": 21747
+      },
+      {
+        "iter": 20,
+        "rows_changed": 9,
+        "dead": 0,
+        "min_count": 3717,
+        "max_count": 21406
+      },
+      {
+        "iter": 21,
+        "rows_changed": 8,
+        "dead": 0,
+        "min_count": 3730,
+        "max_count": 21392
+      },
+      {
+        "iter": 22,
+        "rows_changed": 8,
+        "dead": 0,
+        "min_count": 3731,
+        "max_count": 21468
+      },
+      {
+        "iter": 23,
+        "rows_changed": 5,
+        "dead": 0,
+        "min_count": 3733,
+        "max_count": 21588
+      },
+      {
+        "iter": 24,
+        "rows_changed": 3,
+        "dead": 0,
+        "min_count": 3733,
+        "max_count": 21707
+      },
+      {
+        "iter": 25,
+        "rows_changed": 4,
+        "dead": 0,
+        "min_count": 3733,
+        "max_count": 21850
+      },
+      {
+        "iter": 26,
+        "rows_changed": 5,
+        "dead": 0,
+        "min_count": 3738,
+        "max_count": 22024
+      },
+      {
+        "iter": 27,
+        "rows_changed": 6,
+        "dead": 0,
+        "min_count": 3741,
+        "max_count": 22011
+      },
+      {
+        "iter": 28,
+        "rows_changed": 5,
+        "dead": 0,
+        "min_count": 3725,
+        "max_count": 22019
+      },
+      {
+        "iter": 29,
+        "rows_changed": 5,
+        "dead": 0,
+        "min_count": 3720,
+        "max_count": 22084
+      },
+      {
+        "iter": 30,
+        "rows_changed": 6,
+        "dead": 0,
+        "min_count": 3718,
+        "max_count": 22080
+      },
+      {
+        "iter": 31,
+        "rows_changed": 6,
+        "dead": 0,
+        "min_count": 3729,
+        "max_count": 22336
+      },
+      {
+        "iter": 32,
+        "rows_changed": 6,
+        "dead": 0,
+        "min_count": 3748,
+        "max_count": 22401
+      },
+      {
+        "iter": 33,
+        "rows_changed": 4,
+        "dead": 0,
+        "min_count": 3744,
+        "max_count": 22355
+      },
+      {
+        "iter": 34,
+        "rows_changed": 3,
+        "dead": 0,
+        "min_count": 3739,
+        "max_count": 22305
+      },
+      {
+        "iter": 35,
+        "rows_changed": 5,
+        "dead": 0,
+        "min_count": 3734,
+        "max_count": 22380
+      },
+      {
+        "iter": 36,
+        "rows_changed": 4,
+        "dead": 0,
+        "min_count": 3751,
+        "max_count": 22423
+      },
+      {
+        "iter": 37,
+        "rows_changed": 5,
+        "dead": 0,
+        "min_count": 3751,
+        "max_count": 22481
+      },
+      {
+        "iter": 38,
+        "rows_changed": 3,
+        "dead": 0,
+        "min_count": 3750,
+        "max_count": 22393
+      },
+      {
+        "iter": 39,
+        "rows_changed": 1,
+        "dead": 0,
+        "min_count": 3741,
+        "max_count": 22488
+      },
+      {
+        "iter": 40,
+        "rows_changed": 0,
+        "dead": 0,
+        "min_count": 3741,
+        "max_count": 22436
+      }
+    ]
+  },
+  "train_usage_full_set": [
+    311218,
+    61790,
+    65331,
+    314466,
+    262876,
+    133927,
+    57366,
+    110790,
+    52084,
+    95389,
+    289005,
+    203032,
+    175560,
+    274425,
+    141214,
+    269447
+  ],
+  "train_dead_codewords": []
+}

@@ -1,0 +1,49 @@
+{
+  "format": "SYZT v0 (forge prototype)",
+  "tables": [
+    {
+      "name": "micro",
+      "n": 16,
+      "k": 8,
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "table_id_fnv1a": "0x7ccb88b5",
+      "rows_bytes_int32": 512,
+      "source_json": "tables/table_micro.json"
+    },
+    {
+      "name": "full",
+      "n": 64,
+      "k": 16,
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "table_id_fnv1a": "0x6f81750a",
+      "rows_bytes_int32": 4096,
+      "source_json": "tables/table_full.json"
+    }
+  ]
+}
