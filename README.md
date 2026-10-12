@@ -110,6 +110,26 @@ plane vs the learned micro plane, same grid, same characters per frame:
   exactly where GLM fell (frame 83 is the named suspect). A
   luma-calibrated mapping is the obvious next experiment.
 
+**Correction, from v2 (2026-10-12)** — the named experiment ran, and it
+acquitted the mapping (full argument in
+[`readerside2/RESULTS-V2.md`](readerside2/RESULTS-V2.md)). All three
+renderings — fixed, learned-rank, and the new learned-calibrated plane
+(each codeword drawn by its centroid's actual mean luma on the kernel's
+own scale) — were re-run in one fresh batch under the identical
+protocol. The *unchanged* conditions moved 2.5–7 points between batches
+at temperature 0.7 (up to 15 on a single question), and v1's headline
+contrast above — MiniMax learned − fixed, +11.5 — redrew as +0.5
+paired. The split verdict therefore stands as **one draw**, not a
+measurement: the stage-5 reader bar (+5 points) is smaller than this
+protocol's noise floor, and the gate cannot be adjudicated without
+temperature 0 and/or roughly 4× the frames. The calibrated mapping is
+adopted anyway, on principle — it renders the brightness intervals that
+actually exist in the data rather than asserting intervals by rank —
+with **no reader benefit claimed**: in v2 it was GLM's best cell and
+MiniMax's worst, both inside noise. One finding is untouched: at
+148×80, region truth travels via the digest — every reader cell in both
+batches still sits below the constant-answer composite.
+
 ---
 
 ## Technical record
@@ -238,11 +258,14 @@ the full train set.
    shard's mark, plus the MCU perf witness the repo still owes overall.
 6. **A bigger, more varied corpus** (more clips, light, weather, scenes)
    and the open question of per-domain tables vs one general table.
-7. **Reader-side evaluation** — *done, verdict split* (see finding 4
-   above and `readerside/`): MiniMax +11.5 points on the learned plane,
-   GLM a wash; the stage-5 reader gate is not cleanly passed. Next:
-   vary the render mapping (luma-calibrated) alongside the table, and
-   route region questions through the digest.
+7. **Reader-side evaluation** — *done; v1 split, v2 noise floor* (see
+   finding 4 above, `readerside/`, and `readerside2/`): v1 drew MiniMax
+   +11.5 on the learned plane and GLM a wash; v2's identical-protocol
+   redraw showed that contrast is inside batch noise at temperature
+   0.7, so the stage-5 reader gate cannot be adjudicated without
+   temperature 0 and/or ~4× frames. The luma-calibrated mapping is
+   adopted on principle, no benefit claimed. Next: route region
+   questions through the digest.
 
 ### Layout
 
@@ -259,4 +282,8 @@ render/   frame_{0010,0120,0260}_tone_compare.{txt,png}
 readerside/  the reader-side evaluation: RESULTS.md, GUIDE.md,
           questions.jsonl, reader_outputs.jsonl (240 records),
           scores.json, failures.json, renders/{fixed,learned}/
+readerside2/  the v2 follow-up — the render mapping on trial, and the
+          batch indicted instead: RESULTS-V2.md, mapping.json,
+          scores_v2.json, reader_outputs.jsonl (240 records),
+          renders/{fixed,learned,learned_cal}/
 ```
