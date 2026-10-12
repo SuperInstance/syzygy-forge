@@ -4,7 +4,7 @@
 
 ## Setup
 
-- **Frames:** 40 frames spread deterministically across the docks clip (`np.linspace(0, 296, 40)` rounded; list in `frames_sampled.json`). One clip, one location, daylight harbour — same corpus the tables were trained on, frames **not** held out from table training (the micro table's T1 training used all 297 frames; this is a readability comparison of two frozen planes, not a generalisation test of the table).
+- **Frames:** 40 frames spread deterministically across the docks clip (`np.linspace(0, 296, 40)` rounded; list in `frames_sampled.json`). One clip, one location, daylight harbour — same corpus the tables were trained on, frames **not** held out from table training (the micro table's T1 training used the 238-frame train split only; this is a readability comparison of two frozen planes, not a generalisation test of the table).
 - **Two renders per frame, same grid (148×80 cells, 11,840 chars), same 10-step ramp ` .:-=+*#%@`:**
   - **fixed** — the kernel's fixed-table tone plane: the shipped `syzygy-video` docks-text/tone frames (one-line file header stripped; verified cell-for-cell against the forge corpus on all 40 frames, 0 mismatches — and the forge verified that corpus against the kernel on all 3,516,480 cells).
   - **learned** — the learned micro table (id `0x7ccb88b5`) rendered by the forge's own renderer (`src/eval.py: learned_plane`, copied verbatim; reproduction-checked against the forge's shipped compare panels for frames 10/120, exact match): biased-argmax assignment, codewords ordered by centroid mean_luma, rank mapped onto the same ramp. **The only difference between the two prompts is which codeword each cell gets.** The learned plane changes 7,215–10,098 of 11,840 cells per frame (61–85%) vs fixed.
