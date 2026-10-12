@@ -1,0 +1,363 @@
+{
+  "stats": {
+    "minimax": {
+      "fixed": {
+        "overall": 0.315,
+        "n": 200,
+        "unparsed": 13,
+        "per_question": {
+          "Q1": {
+            "acc": 0.2,
+            "n": 40,
+            "unparsed": 3
+          },
+          "Q2": {
+            "acc": 0.35,
+            "n": 40,
+            "unparsed": 2
+          },
+          "Q3": {
+            "acc": 0.35,
+            "n": 40,
+            "unparsed": 2
+          },
+          "Q4": {
+            "acc": 0.425,
+            "n": 40,
+            "unparsed": 3
+          },
+          "Q5": {
+            "acc": 0.25,
+            "n": 40,
+            "unparsed": 3
+          }
+        },
+        "lift": 0.0050000000000000044
+      },
+      "learned": {
+        "overall": 0.43,
+        "n": 200,
+        "unparsed": 0,
+        "per_question": {
+          "Q1": {
+            "acc": 0.3,
+            "n": 40,
+            "unparsed": 0
+          },
+          "Q2": {
+            "acc": 0.4,
+            "n": 40,
+            "unparsed": 0
+          },
+          "Q3": {
+            "acc": 0.5,
+            "n": 40,
+            "unparsed": 0
+          },
+          "Q4": {
+            "acc": 0.525,
+            "n": 40,
+            "unparsed": 0
+          },
+          "Q5": {
+            "acc": 0.425,
+            "n": 40,
+            "unparsed": 0
+          }
+        },
+        "lift": 0.12
+      },
+      "blind": {
+        "overall": 0.31,
+        "n": 200,
+        "unparsed": 17,
+        "per_question": {
+          "Q1": {
+            "acc": 0.15,
+            "n": 40,
+            "unparsed": 4
+          },
+          "Q2": {
+            "acc": 0.225,
+            "n": 40,
+            "unparsed": 4
+          },
+          "Q3": {
+            "acc": 0.4,
+            "n": 40,
+            "unparsed": 3
+          },
+          "Q4": {
+            "acc": 0.55,
+            "n": 40,
+            "unparsed": 3
+          },
+          "Q5": {
+            "acc": 0.225,
+            "n": 40,
+            "unparsed": 3
+          }
+        },
+        "lift": 0.0
+      },
+      "learned_minus_fixed": 0.11499999999999999
+    },
+    "glm": {
+      "fixed": {
+        "overall": 0.35,
+        "n": 200,
+        "unparsed": 25,
+        "per_question": {
+          "Q1": {
+            "acc": 0.15,
+            "n": 40,
+            "unparsed": 1
+          },
+          "Q2": {
+            "acc": 0.325,
+            "n": 40,
+            "unparsed": 3
+          },
+          "Q3": {
+            "acc": 0.6,
+            "n": 40,
+            "unparsed": 5
+          },
+          "Q4": {
+            "acc": 0.35,
+            "n": 40,
+            "unparsed": 8
+          },
+          "Q5": {
+            "acc": 0.325,
+            "n": 40,
+            "unparsed": 8
+          }
+        },
+        "lift": 0.06999999999999995
+      },
+      "learned": {
+        "overall": 0.325,
+        "n": 200,
+        "unparsed": 6,
+        "per_question": {
+          "Q1": {
+            "acc": 0.15,
+            "n": 40,
+            "unparsed": 0
+          },
+          "Q2": {
+            "acc": 0.25,
+            "n": 40,
+            "unparsed": 1
+          },
+          "Q3": {
+            "acc": 0.325,
+            "n": 40,
+            "unparsed": 1
+          },
+          "Q4": {
+            "acc": 0.525,
+            "n": 40,
+            "unparsed": 2
+          },
+          "Q5": {
+            "acc": 0.375,
+            "n": 40,
+            "unparsed": 2
+          }
+        },
+        "lift": 0.044999999999999984
+      },
+      "blind": {
+        "overall": 0.28,
+        "n": 200,
+        "unparsed": 60,
+        "per_question": {
+          "Q1": {
+            "acc": 0.3,
+            "n": 40,
+            "unparsed": 12
+          },
+          "Q2": {
+            "acc": 0.275,
+            "n": 40,
+            "unparsed": 12
+          },
+          "Q3": {
+            "acc": 0.35,
+            "n": 40,
+            "unparsed": 12
+          },
+          "Q4": {
+            "acc": 0.25,
+            "n": 40,
+            "unparsed": 12
+          },
+          "Q5": {
+            "acc": 0.225,
+            "n": 40,
+            "unparsed": 12
+          }
+        },
+        "lift": 0.0
+      },
+      "learned_minus_fixed": -0.024999999999999967
+    }
+  },
+  "clear_subset": {
+    "minimax": {
+      "fixed": {
+        "overall": 0.30952380952380953,
+        "per_question": {
+          "Q1": {
+            "acc": 0.2,
+            "n": 15
+          },
+          "Q2": {
+            "acc": 0.3888888888888889,
+            "n": 18
+          },
+          "Q3": {
+            "acc": 0.23529411764705882,
+            "n": 17
+          },
+          "Q4": {
+            "acc": 0.425,
+            "n": 40
+          },
+          "Q5": {
+            "acc": 0.2222222222222222,
+            "n": 36
+          }
+        }
+      },
+      "learned": {
+        "overall": 0.47619047619047616,
+        "per_question": {
+          "Q1": {
+            "acc": 0.4,
+            "n": 15
+          },
+          "Q2": {
+            "acc": 0.3888888888888889,
+            "n": 18
+          },
+          "Q3": {
+            "acc": 0.6470588235294118,
+            "n": 17
+          },
+          "Q4": {
+            "acc": 0.525,
+            "n": 40
+          },
+          "Q5": {
+            "acc": 0.4166666666666667,
+            "n": 36
+          }
+        }
+      }
+    },
+    "glm": {
+      "fixed": {
+        "overall": 0.36507936507936506,
+        "per_question": {
+          "Q1": {
+            "acc": 0.26666666666666666,
+            "n": 15
+          },
+          "Q2": {
+            "acc": 0.2222222222222222,
+            "n": 18
+          },
+          "Q3": {
+            "acc": 0.7058823529411765,
+            "n": 17
+          },
+          "Q4": {
+            "acc": 0.35,
+            "n": 40
+          },
+          "Q5": {
+            "acc": 0.3333333333333333,
+            "n": 36
+          }
+        }
+      },
+      "learned": {
+        "overall": 0.3968253968253968,
+        "per_question": {
+          "Q1": {
+            "acc": 0.26666666666666666,
+            "n": 15
+          },
+          "Q2": {
+            "acc": 0.16666666666666666,
+            "n": 18
+          },
+          "Q3": {
+            "acc": 0.4117647058823529,
+            "n": 17
+          },
+          "Q4": {
+            "acc": 0.525,
+            "n": 40
+          },
+          "Q5": {
+            "acc": 0.4166666666666667,
+            "n": 36
+          }
+        }
+      }
+    }
+  },
+  "constant_baselines": {
+    "Q1": {
+      "answer": "BR",
+      "accuracy": 0.425,
+      "distribution": {
+        "TL": 7,
+        "BL": 7,
+        "BR": 17,
+        "TR": 9
+      }
+    },
+    "Q2": {
+      "answer": "TL",
+      "accuracy": 0.375,
+      "distribution": {
+        "BL": 11,
+        "TL": 15,
+        "TR": 9,
+        "BR": 5
+      }
+    },
+    "Q3": {
+      "answer": "right",
+      "accuracy": 0.525,
+      "distribution": {
+        "left": 19,
+        "right": 21
+      }
+    },
+    "Q4": {
+      "answer": "right",
+      "accuracy": 0.55,
+      "distribution": {
+        "right": 22,
+        "left": 18
+      }
+    },
+    "Q5": {
+      "answer": "top",
+      "accuracy": 0.5,
+      "distribution": {
+        "middle": 9,
+        "top": 20,
+        "bottom": 11
+      }
+    }
+  },
+  "n_failed_attempts": 1,
+  "missing": []
+}
